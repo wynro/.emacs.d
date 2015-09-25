@@ -1,2 +1,5 @@
 # Ignore all backups
+auto-save-list/
 backups/
+exp/
+*.per.*

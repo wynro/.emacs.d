@@ -1,9 +1,0 @@
-| 0 |  Año | Grupo/Artista   | Cancion                            | Direccion   | Link |
-|---+------+-----------------+------------------------------------+-------------+------|
-| 1 | 1983 | ?               | Domo Arigato Mr. Roboto (Original) | gh-7eZyPWtE | [[https://www.youtube.com/watch?v=gh-7eZyPWtE][Link]] |
-| 2 | 1983 | Styx            | Domo Arigato Mr. Roboto            | CzzZkkiJMv8 | [[https://www.youtube.com/watch?v=CzzZkkiJMv8][Link]] |
-| 3 | 1985 | Dead or Alive   | You Spin Me Round (Like a Record)  | PGNiXGX2nLU | [[https://www.youtube.com/watch?v=PGNiXGX2nLU][Link]] |
-| 4 | 1990 | MC Hammer       | You Can't Touch This               | otCpCn0l4Wo | [[https://www.youtube.com/watch?v=otCpCn0l4Wo][Link]] |
-| 5 | 1999 | Bloodhound Gang | The Bad Touch                      | xat1GVnl8-k | [[https://www.youtube.com/watch?v=xat1GVnl8-k][Link]] |
-| 6 |    ? | Simpsons        | Mocasines Saltarines               | nHyV2vESRaE | [[https://www.youtube.com/watch?v=nHyV2vESRaE][Link]] |
-#+TBLFM: $1=@-1+1::$6='(concat "[[https://www.youtube.com/watch?v=" $5 "]" "[Link]]")
