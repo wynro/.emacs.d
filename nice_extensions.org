@@ -1,0 +1,24 @@
+#+TITLE: Notas extensiones Emacs
+#+STARTUP: content
+
+* Extensiones interesantes 
+** Modos
+*** TODO [#B] evil-mode
+    Un modo que simula la funcionalidad de vi, me sera util para aprender
+*** TODO [#A] c++-mode
+    Para editar codigo c++
+*** TODO [#B] lisp-mode
+    Para editar archivos con codigo lisp (Generalmente Emacs-Lisp)
+    (+ 1 1)
+*** TODO [#A] org-mode
+    organizador con agenda, calendario y demas
+** Otras
+*** TODO multiple-cursors
+    sistema para tener varios cursores editando a la vez el texto
+** Menos utiles
+*** TODO Emacs AlsaPlayer - Music without Jolts
+    reproductor de musica por consola
+* Para instalar
+  * multiple-cursors
+  * Emacs AlsaPlayer
+  * evil-mode

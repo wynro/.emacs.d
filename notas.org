@@ -1,0 +1,304 @@
+#+TITLE: "Notas acerca de diversos comandos de Emacs"
+#+STARTUP: content
+
+* org-mode
+** Tablas
+    - Mala idea, es mucho mas comodo usar la sintaxis |
+*** Crear tabla
+    - C-c ~ / M-x .
+    - (describe-key (kbd "C-c ~"))
+    - Crea una tabla del tamaño dado
+*** Editar tabla
+    - C-c '
+    - (describe-key (kbd "C-c '"))
+    - Ten en cuenta que este comando pasa a modo de edicion especial,
+      esto solo funcionara si se esta en una tabla, en otro
+*** Ejemplos
+  Prueba Nombre
+  +----------+----------+----------+----------+
+  |Nombre1   |Apellido1 |Apellido1 |Fecha     |
+  |          |          |          |Nacimiento|
+  +----------+----------+----------+----------+
+  |Nombre2   |Apellido2 |Apellido2 |Fecha     |
+  |          |          |          |Nacimiento|
+  +----------+----------+----------+----------+
+  |Nombre3   |Apellido3 |Apellido3 |Fecha     |
+  |          |          |          |Nacimiento|
+  +----------+----------+----------+----------+
+
+  Prueba tabla
+  |---+---+---+---|
+  |   |   |   |   |
+  |---+---+---+---|
+  |   |   |   |   |
+  |---+---+---+---|
+  |   |   |   |   |
+  |---+---+---+---|
+
+** Tablas2
+*** Crear tabla
+    - Escribir:
+      | Elem1 | Elem2 | Elem3 |
+      |-------+-------+-------|
+      |       |       |       |
+      |       |       |       |
+      |       |       |       |
+*** Formulas
+    - =asdasd= /asdasf/ *asdasd* _asd_
+    |---+---|
+    |   |   |
+    |---+---|
+    |   |   |
+    |   |   |
+    |   |   |
+    |---+---|
+    - Escribir en una celda la formula adecuada
+    - Soporta Calc y Lisp (Lisp hay que precederlo de ')
+**** Referencias
+     - $n se refiere a la columna, se admite absoluto (el numero), o
+       relativo (poner +n, -n; para abajo y arriba)
+     - @n se refiere a la fila, se admite absoluto (el numero), o
+       relativo (poner +n, -n; para abajo y arriba)
+     - Se pueden combinar como se desee
+** Autodescrito en este archivo practico :)
+** Notas
+** TODO No me funcionan los comandos adecuados, mirarlo bien
+* General
+  C-u <numero> <comando> Permite pasar un argumento a un comando,
+  dicho argumento sera comunmente el numero de veces que se ha de
+  repetir (por ejemplo, en desplazamientos o macros), pero dependiendo
+  del comando puede significar cualquier cosa
+
+* Ayuda
+** Ayuda sobre una combinacion de teclas
+   - C-h k <Combinacion teclas>
+   - (describe-key (kbd "C-h k"))
+   - Da informacion util, como que funcion Lisp se esta ejecutando en realidad
+   - Util si me interesa reasignar teclas
+** Ayuda sobre una funcion
+   - C-h f <nombre funcion>
+   - (describe-key (kbd "C-h f"))
+   - Informacion sobre la funcion, como origen, trabajo o argumentos necesarios
+** Ayuda sobre la ayuda (Hehe...)
+   - C-h C-h
+   - (describe-key (kbd "C-h C-h"))
+   - Da toda la ayuda escrita y bastante mas, acordarse de mirarlo si tengo dudas
+** TODO Ideas [1/1]
+   - [X] Autoayuda??
+* Ventanas
+** Moverme entre ventanas
+** Cerrar ventana actual
+   - C-x 0
+   - (describe-key (kbd "C-x 0"))
+   - Es de notar que no destruye los buffers, y estos siguen disponibles para editar cuando sea necesario, siempre que se vuelvan a abrir
+** Cerrar todas las ventanas menos la actual
+   - C-x 1
+   - (describe-key (kbd "C-x 1"))
+   - Es de nota no destruye los buffers, y estos siguen disponibles para editar cuando sea necesario, siempre que se vuelvan a abrir
+** Abrir nueva ventana(Division horizontal)
+   - C-x 2
+   - (describe-key (kbd "C-x 2"))
+   - Abre el mismo buffer que este en la ventana desde la cual se realiza la operacion, sin embargo no mueve el cursor a la nueva ventana
+   - Ahora si mueve el cursor a la nueva ventana
+** Abrir nueva ventana(Division vertical)
+   - C-x 3
+   - (describe-key (kbd "C-x 3"))
+   - Abre el mismo buffer que este en la ventana desde la cual se realiza la operacion, sin embargo no mueve el cursor a la nueva ventana
+   - Ahora si mueve el cursor a la nueva ventana
+** Notas
+ - Aparentemente el resto de combinaciones C-x [4-9] estan libres, por lo que se pueden utilizar para comandos propios
+** Ideas [1/1]
+ - [X] Hacer que cuando se abra una ventana, se pase el cursor a la nueva ventana
+* Edicion
+** Cortado
+   - C-w (Cortado, llamado killing en Emacs)
+   - (describe-key (kbd "C-w"))
+   - Las cosas no se almacenan en un simple portapapeles, sino en una
+     lista circular, esto nos permite tener varias cosas en el
+     portapapeles a la vez.
+** Copiar
+   - M-w (Copiado, llamado kill-ring-save)
+   - (describe-key (kbd "M-w"))
+   - Las cosas no se almacenan en un simple portapapeles, sino en una
+     lista circular, esto nos permite tener varias cosas en el
+     portapapeles a la vez.
+** Pegado
+   - C-y (yanking aqui)
+   - (describe-key (kbd "C-y"))
+   - Despues de pulsar C-y, pulsar M-y nos permite ciclar sobre el
+     buffer circular del portapapeles, permitiendonos tener varios
+     parrafos cortados/copiados a la vez
+** TODO Ortografia y gramatica
+   - ispell: subprograma GNU que se usa para comprobar sintaxis
+   - [X] Comprobar cosas como cambiar el diccionario y tal
+** Ideas [1/1]
+   - [X] Mirar si se puede COPIAR una zona, actualmente se utiliza C-w
+     C-y, que lo corta y lo pega, dejandolo en el buffer circular,
+     pero es un poco incomodo
+* Zonas
+** Seleccion de zona
+   - C-SPC: Seleccionar zona
+   - C-g: Deseleccionar zona
+   - Mover cursor y se seleccionara la zona deseada
+** Borrado de zona
+   - DEL (Teniendo zona seleccionada)
+   - (describe-key (kbd "DEL"))
+   - Borra el contenido, tampoco hay nada mas que contar
+** Movimiento
+   - C-w (Killing) : (describe-key (kbd "C-w"))
+   - M-w (Copy)    : (describe-key (kbd "M-w"))
+   - C-y (Yanking) : (describe-key (kbd "C-y"))
+   - M-y (Yank-pop): (describe-key (kbd "M-y"))
+   - Sigue las reglas del buffer circular (inmediatamente despues de c-y, m-y cicla sobre los distintos elementos en yanking)
+** Otros
+   - c-x c-x: intercambia cursor entre inicio y final de la zona
+   - (describe-key (kbd "c-x c-x"))
+
+** Ideas [1/1]
+   - [x] mirar si se puede copiar una zona, actualmente se utiliza c-w
+     c-y, que lo corta y lo pega, dejandolo en el buffer circular,
+     pero es un poco incomodo
+
+* Movimiento
+** Guion completo
+  | Com | Descripcion                        | Ayuda                      |
+  |-----+------------------------------------+----------------------------|
+  | C-l | Center screen around cursor        | (describe-key (kbd "C-l")) |
+  | C-v | Move one screen down               | (describe-key (kbd "C-v")) |
+  | C-f | Move forward a character           | (describe-key (kbd "C-f")) |
+  | C-b | Move backward a character          | (describe-key (kbd "C-b")) |
+  | M-f | Move forward a word                | (describe-key (kbd "M-f")) |
+  | M-b | Move backward a word               | (describe-key (kbd "M-b")) |
+  | C-n | Move to next line                  | (describe-key (kbd "C-n")) |
+  | C-p | Move to previous line              | (describe-key (kbd "C-p")) |
+  | C-a | Move to beginning of line          | (describe-key (kbd "C-a")) |
+  | C-e | Move to end of line                | (describe-key (kbd "C-e")) |
+  | M-a | Move back to beginning of sentence | (describe-key (kbd "M-a")) |
+  | M-e | Move forward to end of sentence    | (describe-key (kbd "M-e")) |
+  | M-< | Move to beginning of document      | (describe-key (kbd "M-<")) |
+  | M-> | Move to end of document            | (describe-key (kbd "M->")) |
+  #+TBLFM: $3='(concat "(describe-key (kbd \"" $1 "\"))")
+** Ideas [1/1]
+   - [X] Mirar atentamente que se entiende por "palabra" (cuales son los separadores y demas)
+     - Espacio, guion, ',
+     - Cuidado porque cambia segun el modo de edicion, por ejemplo, en text-mode ' no se considera un separador
+* LaTex
+** Convertir usando Tex
+   - C-c C-b (en tex-mode)
+** Convertir usando el comando deseado
+   - C-c C-f (en tex-mode)
+   - Cambiable modificando la variable 'latex-run-command
+** convertir usando ORG-MODE
+   - C-c e [...]  (en org-mode)
+* Calc
+  - Sistema basado en RPN, esto es, notacion polaca inversa, esto es,
+    notacion postfija, ej:
+    2 2 + => 4
+  - Primero se introducen los argumentos, luego la operacion
+  - Es incomodo pero funciona "bien"
+  - C-x *: da acceso a todas las caracteristicas de Calc, desde modos
+    raros hasta ayuda (?)
+  - C-x * ?: ayuda
+  - C-x * e: modo embebido
+  - C-x * c: abrir calculadora debajo (Cambiado para )
+  - C-x * k: abrir calculadora en modo teclado (mi preferido, sobre
+    todo tras elimnar el teclado)
+  - C-x ç : abrir en modo teclado eliminando el teclado
+  - [[https://www.gnu.org/software/emacs/manual/html_mono/calc.html][TUTORIAL]]
+  - c-F : modo fracciones / c-f : modo flotantes
+** Conversion de unidades
+  - introducir los elementos con unidades en modo algebraico (')
+  - u c para convertirlo a otra unidad
+  - u s simplificar unidades
+  - u ? ayuda
+** Calculos comunes
+*** Adicion a pila
+    - Nota: eliminado del elemento de la pila: DEL
+**** Numero comun
+     - <num> RET
+**** Matrices
+     - Es recomendable la captura desde una ventana de texto
+     - Ejemplo:
+            1.23  1.97
+            1.6   2
+            1.19  1.08
+     - Seleccionar con un rectangulo, C-x * r
+**** Listas
+     - Es recomendable la captura desde una ventana de texto
+     - Ejemplo:
+            1 2 3 4 5 6
+     - Seleccionar con un rectangulo, C-x * g
+*** Matrices
+    - Transposicion: v t
+      
+* Otros
+** Musica
+   - Usar el modo consola de VLC es lo que mejor me ha ido:
+   - [[https://wiki.videolan.org/Console/][LINK TUTO]]
+   - "vlc --intf rc"
+   - "vlc --intf ncurses"
+   - Telnet que no pienso usarlo
+
+** Hendrix RSA key
+   Host key fingerprint is
+   a8:5c:70:6c:6d:24:bd:4e:a9:08:d6:43:71:1f:7f:ec
+   +--[ RSA 1024]----+
+   |    ..o.o        |
+   |    .o =.o .     |
+   |   o. + +o. o    |
+   |  o o+ o+  o     |
+   | . . oo+S   E    |
+   |   ..o. .        |
+   |    o            |
+   |                 |
+   |                 |
+   +-----------------+
+** Prueba Tablas
+   | Concepto | Pagos | Ingresos | Total |
+   |----------+-------+----------+-------|
+   |          |       |          |     0 |
+   | Coche    |    34 |          |   -34 |
+   | Cobro    |       |     2500 |  2466 |
+   | Pago     |    43 |          |  2423 |
+   |          |       |          |  2423 |
+   |          |       |          |  2423 |
+   |          |       |          |  2423 |
+   |          |       |          |  2423 |
+   |          |       |          |  2423 |
+   |          |       |          |       |
+   #+TBLFM: $4=($3-$2)+@-1
+   # Calc code
+
+   | Nombre  | Edad | Adulto? |
+   |---------+------+---------|
+   | Pepe    |   23 | Si      |
+   | Juan    |   12 | No      |
+   | Maria   |   17 | No      |
+   | Alberto |   13 | No      |
+   | Marta   |   36 | Si      |
+   #+TBLFM: $3=if($2>=18, Si, No)
+   # Calc code
+
+   | Student  | Maths | Physics | Mean |
+   |----------+-------+---------+------|
+   | Bertrand |    16 |      03 |  9.5 |
+   | Henri    |    16 |      04 |   10 |
+   | Arnold   |    16 |      13 | 14.5 |
+   #+TBLFM: $4=($2+$3)/2
+   # Calc code
+
+   | First  name | Last Name | Maths | French | Mean       |
+   |-------------+-----------+-------+--------+------------|
+   | John        | Doe       |    12 |     16 | John: 14   |
+   | Jonnie      | Duh       |    15 |      9 | Jonnie: 12 |
+   | John        | Doe       |     0 |     20 | John: 10   |
+   #+TBLFM: $5='(concat "$1" ": " (number-to-string (/ (+ $3 $4) 2)) );L
+   # Lisp code
+
+  | Name | Phone | Age |
+  |------+-------+-----|
+  |      |       |     |
+  |      |       |     |
+  |      |       |     |
+  |      |       |     |
+
