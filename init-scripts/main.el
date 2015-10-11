@@ -1,6 +1,5 @@
 ;; File that loads all the files in the directory
-;; Timestamp: <2015-08-14 - 22:26>
-
+;; Timestamp: <2015-10-03 - 20:54>
 
 (load "backup.el")
 (load "buffer-defuns.el")
@@ -11,6 +10,7 @@
 (load "google-translate-config.el")
 (load "init-config.el")
 (load "isearch.el")
+(load "latex-and-doc-view.el")
 ;; (load "main.el") ;; Unnecesary
 (load "make-config.el")
 ;; (load "multi-web-mode.el") ;; Loaded by mweb-config.el
