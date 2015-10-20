@@ -1,5 +1,5 @@
 ;; File that loads all the files in the directory
-;; Timestamp: <2015-10-03 - 20:54>
+;; Timestamp: <2015-10-20 - 16:35>
 
 (load "backup.el")
 (load "buffer-defuns.el")
@@ -10,6 +10,9 @@
 (load "google-translate-config.el")
 (load "init-config.el")
 (load "isearch.el")
+(defvar init-jdee (concat init-scripts "jdee/"))
+(add-to-list 'load-path init-jdee)
+(load "jdee-config.el")
 (load "latex-and-doc-view.el")
 ;; (load "main.el") ;; Unnecesary
 (load "make-config.el")
