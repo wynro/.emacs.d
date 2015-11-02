@@ -1,5 +1,5 @@
 ;; JDEE initializer
-;; Timestamp: <2015-10-20 - 23:17>
+;; Timestamp: <2015-10-27 - 11:42>
 
 
 ;; (defun jde-mode ()

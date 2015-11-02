@@ -1,5 +1,5 @@
 ;; ^False, copied from the college original file, will grow as needed
-;; Time-stamp: <2015-10-21 - 17:17>
+;; Time-stamp: <2015-10-28 - 16:15>
 
 ;; (defvar gnus-local-organization "CPS Universidad de Zaragoza")
 (setq gnus-local-organization "Rank")
@@ -38,6 +38,7 @@
 ;; or 4, move to his own file)
 (add-to-list 'auto-mode-alist '("\\.plx\\'" . perl-mode))
 (add-to-list 'auto-mode-alist '("\\.cc\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.tex\\'" . latex-preview-pane-mode))
 
 ;; Changes
 (column-number-mode)   ;; para que aparezca el numero de columna
