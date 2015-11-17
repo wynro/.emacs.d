@@ -1,5 +1,5 @@
 ;; Configuration combined for LaTeX (AUCTeX) and DocView
-;; Timestamp: <2015-10-27 - 11:43>
+;; Timestamp: <2015-11-17 - 00:12>
 
 ;; LaTeX
 ;; FIXME
@@ -40,6 +40,8 @@ If buffer-or-name is nil return current buffer's mode."
         (replace-string "ó" "\\'o")
         (beginning-of-buffer)
         (replace-string "ú" "\\'u")
+        (beginning-of-buffer)
+        (replace-string "ñ" "\\~n")
         )
     )
   )
@@ -58,6 +60,8 @@ If buffer-or-name is nil return current buffer's mode."
         (replace-string "\\'o" "ó")
         (beginning-of-buffer)
         (replace-string "\\'u" "ú")
+        (beginning-of-buffer)
+        (replace-string "\\~n" "ñ")
         )
     )
   )

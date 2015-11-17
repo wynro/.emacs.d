@@ -1,5 +1,5 @@
 ;; File that loads all the necessary files in the directory
-;; Timestamp: <2015-11-02 - 18:30>
+;; Timestamp: <2015-11-18 - 00:28>
 
 (load "backup.el")			; (find-file "backup.el")
 (load "buffer-defuns.el")		; (find-file "buffer-defuns.el")
@@ -7,7 +7,7 @@
 (load "c-config.el")			; (find-file "c-config.el")
 
 (add-to-list 'load-path (concat init-scripts "haskell-mode/"))
-(load "haskell-config.el")
+(load "haskell-config.el")		; 
 
 (add-to-list 'load-path (concat init-scripts "emms/lisp/"))
 (load "emms-config.el")			; (find-file "emms-config.el")
@@ -31,6 +31,8 @@
 (load "timestamp.el")			; (find-file "timestamp.el")
 (load "typing-practice.el")		; (find-file "typing-practice.el")
 (load "web-ide.el")			; (find-file "web-ide.el")
+;; (java-snippets :fetcher github :repo "nekop/yasnippet-java-mode"
+;;                :files ("*.el" "snippets"))
 (add-to-list 'load-path (concat init-scripts "yasnippet/"))
 (require 'yasnippet)
 (yas-global-mode 1)

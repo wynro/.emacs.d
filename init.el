@@ -1,5 +1,5 @@
 ;; ^False, copied from the college original file, will grow as needed
-;; Time-stamp: <2015-10-28 - 16:15>
+;; Time-stamp: <2015-11-18 - 00:31>
 
 ;; (defvar gnus-local-organization "CPS Universidad de Zaragoza")
 (setq gnus-local-organization "Rank")
@@ -31,17 +31,19 @@
 ;; Pay respects to our God
 (defun press-f () (interactive) (print "You payed respects"))
 
-;; Shell (Ideally Bash) binded to F2
-(global-set-key [f2] 'shell)
+;; Shell (Ideally Bash) binded to F5
+;; Apparently, term is far better. We'll see
+(global-set-key [f5] 'bash)
 
 ;; Use the correct mode in every filetype (If this goes bigger than 3
 ;; or 4, move to his own file)
 (add-to-list 'auto-mode-alist '("\\.plx\\'" . perl-mode))
 (add-to-list 'auto-mode-alist '("\\.cc\\'" . c++-mode))
-(add-to-list 'auto-mode-alist '("\\.tex\\'" . latex-preview-pane-mode))
-
+(add-to-list 'auto-mode-alist '("\\.tex\\'" . latex-mode))
+(add-hook 'latex-mode-hook 'latex-preview-pane-mode)
+ 
 ;; Changes
-(column-number-mode)   ;; para que aparezca el numero de columna
+(column-number-mode)   ;; Para que aparezca el numero de columna
 (show-paren-mode)      ;; Para que tenga emparejado de parentesis
 
 (custom-set-variables
