@@ -1,5 +1,5 @@
 ;; ^False, copied from the college original file, will grow as needed
-;; Time-stamp: <2015-11-18 - 00:31>
+;; Time-stamp: <2015-11-20 - 19:16>
 
 ;; (defvar gnus-local-organization "CPS Universidad de Zaragoza")
 (setq gnus-local-organization "Rank")
@@ -33,7 +33,7 @@
 
 ;; Shell (Ideally Bash) binded to F5
 ;; Apparently, term is far better. We'll see
-(global-set-key [f5] 'bash)
+(global-set-key [f5] 'shell)
 
 ;; Use the correct mode in every filetype (If this goes bigger than 3
 ;; or 4, move to his own file)
