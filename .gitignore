@@ -5,4 +5,6 @@ exp/
 *.per.*
 session.*
 *~
-#*#
+**/#*
+**/.#*
+emms/cache
