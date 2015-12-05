@@ -1,12 +1,12 @@
 ;; File that loads all the necessary files in the directory
-;; Timestamp: <2015-11-28 - 12:33>
+;; Timestamp: <2015-12-05 - 20:03>
 
 (load "backup.el")			; (find-file "backup.el")
 (load "buffer-defuns.el")		; (find-file "buffer-defuns.el")
 (load "calc-config.el")			; (find-file "calc-config.el")
 (load "c-config.el")			; (find-file "c-config.el")
 (add-to-list 'load-path (concat init-scripts "haskell-mode/"))
-(load "haskell-config.el")		; 
+(load "haskell-config.el")		; (find-file "haskell-config.el")
 (add-to-list 'load-path (concat init-scripts "emms/lisp/"))
 (load "emms-config.el")			; (find-file "emms-config.el")
 (load "eval-and-replace.el")		; (find-file "eval-and-replace.el")
@@ -19,7 +19,7 @@
 (load "jdee-config.el")			; (find-file "jdee-config.el")
 (load "latex-and-doc-view.el")		; (find-file "latex-and-doc-view.el")
 (load "magit-config.el")  		; (find-file "magit-config.el")
-;; (load "main.el")                     ; Unnecesary/ infinite loop
+;; (load "main.el")                     ; Unnecesary/infinite loop
 (load "make-config.el")			; (find-file "make-config.el")
 ;; (load "multi-web-mode.el")           ; Loaded by mweb-config.el
 (load "mweb-config.el")			; (find-file "mweb-config.el")
