@@ -1,5 +1,5 @@
 ;; Functions to work with translation
-;; Timestamp: <2015-08-14 - 21:28>
+;; Timestamp: <2015-12-05 - 20:08>
 
 ;;; google-translate-core.el --- google-translate core script.
 
@@ -304,4 +304,4 @@ translation it is possible to get suggestion."
     )
   )
 
-(global-set-key (kbd "C-c t") 'from-spanish-to-english)
+(global-set-key (kbd "C-c C-t") 'from-spanish-to-english)

@@ -1,9 +1,11 @@
 ;; Configuration for tetris
-;; Timestamp: <2015-08-14 - 21:22>
+;; Timestamp: <2015-12-05 - 20:08>
 
 (require 'tetris)
 (setq tetris-score-file
       "~/.emacs.d/tetris-scores")
+
+(global-set-key (kbd "C-c t") 'tetris)
 (define-key tetris-mode-map "n"     'tetris-start-game)
 (define-key tetris-mode-map "q"     'tetris-end-game)
 (define-key tetris-mode-map "p"     'tetris-pause-game)
