@@ -1,5 +1,5 @@
 ;; ^False, copied from the college original file, will grow as needed
-;; Time-stamp: <2015-11-20 - 19:16>
+;; Time-stamp: <2015-12-08 - 14:51>
 
 ;; (defvar gnus-local-organization "CPS Universidad de Zaragoza")
 (setq gnus-local-organization "Rank")
@@ -39,8 +39,6 @@
 ;; or 4, move to his own file)
 (add-to-list 'auto-mode-alist '("\\.plx\\'" . perl-mode))
 (add-to-list 'auto-mode-alist '("\\.cc\\'" . c++-mode))
-(add-to-list 'auto-mode-alist '("\\.tex\\'" . latex-mode))
-(add-hook 'latex-mode-hook 'latex-preview-pane-mode)
  
 ;; Changes
 (column-number-mode)   ;; Para que aparezca el numero de columna
@@ -62,6 +60,7 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; Enable some buff commands
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)

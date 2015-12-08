@@ -1,5 +1,5 @@
 ;; Configuration combined for LaTeX (AUCTeX) and DocView
-;; Timestamp: <2015-11-25 - 17:14>
+;; Timestamp: <2015-12-08 - 14:51>
 
 ;; LaTeX
 ;; FIXME
@@ -66,7 +66,8 @@ If buffer-or-name is nil return current buffer's mode."
     )
   )
 
-
+(add-to-list 'auto-mode-alist '("\\.tex\\'" . latex-mode))
+(add-hook 'latex-mode-hook 'latex-preview-pane-mode)
 (add-hook 'doc-view-mode-hook 'doc-view-my-keys)
 ;; (add-hook 'before-save-hook 'latex-quita-acentos)
 ;; (add-hook 'after-save-hook 'latex-pon-acentos)
