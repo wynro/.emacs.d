@@ -1,5 +1,5 @@
 ;; Functions to work with translation
-;; Timestamp: <2015-12-05 - 20:08>
+;; Timestamp: <2015-12-08 - 11:38>
 
 ;;; google-translate-core.el --- google-translate core script.
 
@@ -304,4 +304,31 @@ translation it is possible to get suggestion."
     )
   )
 
-(global-set-key (kbd "C-c C-t") 'from-spanish-to-english)
+
+(defun from-english-to-spanish(string &optional from to)
+  "Translates the region or the passed string"
+  (interactive
+   (if (use-region-p)
+       (list nil (region-beginning) (region-end))
+     (let ((bds (bounds-of-thing-at-point 'paragraph)))
+       (list nil (car bds) (cdr bds)))))
+  (let (workOnStringP inputStr outputStr)
+    (setq workOnStringP (if string t nil))
+    (setq inputStr (if workOnStringP string (buffer-substring-no-properties from to)))
+    (setq outputStr
+          (google-translate-json-translation (google-translate-request "English" "Spanish" inputStr)))
+    (if workOnStringP
+        outputStr
+      (save-excursion
+        (delete-region from to)
+        (goto-char from)
+        (insert outputStr)
+	)
+      )
+    )
+  )
+
+(define-prefix-command 'google-translate-map)
+(global-set-key (kbd "C-c C-t") 'google-translate-map)
+(define-key google-translate-map (kbd "s e") 'from-spanish-to-english)
+(define-key google-translate-map (kbd "e s") 'from-english-to-spanish)
