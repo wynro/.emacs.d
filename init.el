@@ -1,5 +1,5 @@
 ;; ^False, copied from the college original file, will grow as needed
-;; Time-stamp: <2015-12-08 - 14:51>
+;; Time-stamp: <2015-12-13 - 12:13>
 
 ;; (defvar gnus-local-organization "CPS Universidad de Zaragoza")
 (setq gnus-local-organization "Rank")
@@ -19,11 +19,13 @@
 ;; Expanding the load-path
 (defvar init-emacs.d (concat (expand-file-name "~") "/.emacs.d/"))
 (defvar init-scripts (concat init-emacs.d "init-scripts/"))
-
 (add-to-list 'load-path init-scripts)
 
 ;; Loading the main configuration file
 (load "main.el")
+
+;; Disable electric-indentation
+(when (fboundp 'electric-indent-mode) (electric-indent-mode -1))
 
 ;; Disable git backend to speed up sshfs file load among other things
 (setq vc-handled-backends (quote ()))
