@@ -1,5 +1,5 @@
 ;; Configuration combined for LaTeX (AUCTeX) and DocView
-;; Timestamp: <2015-12-24 - 20:44>
+;; Timestamp: <2015-12-25 - 12:00>
 
 ;; LaTeX
 ;; FIXME
@@ -13,7 +13,7 @@
 ;; (define-key doc-view-mode-map "g" (doc-view-revert-buffer 1 1))
 
 ;; Personalized command, not standard
-(setq pdf-latex-command "latex-full")
+(setq pdf-latex-command "fullbibtex")
 
 (defun doc-view-my-keys()
   "Modify keymaps used by `doc-view-mode'."
