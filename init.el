@@ -1,5 +1,5 @@
 ;; ^False, copied from the college original file, will grow as needed
-;; Time-stamp: <2015-12-13 - 12:13>
+;; Time-stamp: <2016-01-26 - 10:24>
 
 ;; (defvar gnus-local-organization "CPS Universidad de Zaragoza")
 (setq gnus-local-organization "Rank")
@@ -20,6 +20,11 @@
 (defvar init-emacs.d (concat (expand-file-name "~") "/.emacs.d/"))
 (defvar init-scripts (concat init-emacs.d "init-scripts/"))
 (add-to-list 'load-path init-scripts)
+
+;; Codification
+(prefer-coding-system 'utf-8)
+(setq coding-system-for-read 'utf-8)
+(setq coding-system-for-write 'utf-8)
 
 ;; Loading the main configuration file
 (load "main.el")
