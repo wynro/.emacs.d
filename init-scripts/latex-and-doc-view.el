@@ -1,5 +1,5 @@
 ;; Configuration combined for LaTeX (AUCTeX) and DocView
-;; Timestamp: <2016-01-11 - 10:27>
+;; Timestamp: <2016-02-05 - 20:51>
 
 ;; LaTeX
 ;; FIXME
@@ -13,7 +13,18 @@
 ;; (define-key doc-view-mode-map "g" (doc-view-revert-buffer 1 1))
 
 ;; Personalized command, not standard
-(setq pdf-latex-command "fullbibtex")
+(setq pdf-latex-command "fullbibtex-p")
+
+;; Change compiler for compatibility reasons
+(defun latex-compiler-pdflatex ()
+  (interactive)
+  (setq pdf-latex-command "fullbibtex-p")
+)
+
+(defun latex-compiler-xelatex ()
+  (interactive)
+  (setq pdf-latex-command "fullbibtex-x")
+)
 
 (defun doc-view-my-keys()
   "Modify keymaps used by `doc-view-mode'."
