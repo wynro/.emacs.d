@@ -1,12 +1,26 @@
 # Ignore all backups
 auto-save-list/*
 backups/
-exp/
-*.per.*
-session.*
 *~
 **/#*
 **/.#*
+
+# Ignore experiments
+*.per.*
+exp/
+
+# Ignore session files
+session.*
+
+# Ignore emms cache
 # emms/cache
+
+# Ignore url request
 url/
-request/*
+
+# Ignore cookie files
+request/
+
+# Ignore org-trello autentification files
+# In theory, this isn't necessary, but whatever
+.trello/
