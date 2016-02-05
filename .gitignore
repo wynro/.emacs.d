@@ -9,3 +9,4 @@ session.*
 **/.#*
 # emms/cache
 url/
+request/*
