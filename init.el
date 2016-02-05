@@ -1,5 +1,5 @@
 ;; ^False, copied from the college original file, will grow as needed
-;; Time-stamp: <2016-01-26 - 10:24>
+;; Time-stamp: <2016-02-05 - 20:54>
 
 ;; (defvar gnus-local-organization "CPS Universidad de Zaragoza")
 (setq gnus-local-organization "Rank")
@@ -15,6 +15,22 @@
 (set-language-environment "Latin-1")
 
 ;; Aditions, if something start to fail, look here
+
+;; Repositories
+(require 'package)
+(package-initialize)
+
+(when (< emacs-major-version 24)
+  ;; For important compatibility libraries like cl-lib
+  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+
+;; Package archive
+(add-to-list 'package-archives
+	     '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives
+	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
+(package-initialize)
 
 ;; Expanding the load-path
 (defvar init-emacs.d (concat (expand-file-name "~") "/.emacs.d/"))

@@ -1,5 +1,5 @@
 ;; File that loads all the necessary files in the directory
-;; Timestamp: <2016-01-10 - 20:18>
+;; Timestamp: <2016-02-05 - 20:49>
 
 (load "backup.el")                      ; (find-file "backup.el")
 (load "buffer-defuns.el")               ; (find-file "buffer-defuns.el")
@@ -25,7 +25,6 @@
 ;; (load "multi-web-mode.el")           ; Loaded by mweb-config.el
 (load "mweb-config.el")                 ; (find-file "mweb-config.el")
 (load "org-config.el")                  ; (find-file "org-config.el")
-(load "packages.el")                    ; (find-file "packages.el")
 (load "production-code.el")             ; (find-file "production-code.el")
 (add-to-list 'load-path (concat init-scripts "skype/"))
 (require 'skype)
