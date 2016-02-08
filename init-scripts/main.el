@@ -1,5 +1,5 @@
 ;; File that loads all the necessary files in the directory
-;; Timestamp: <2016-02-05 - 20:49>
+;; Timestamp: <2016-02-07 - 12:40>
 
 (load "backup.el")                      ; (find-file "backup.el")
 (load "buffer-defuns.el")               ; (find-file "buffer-defuns.el")
@@ -28,6 +28,7 @@
 (load "production-code.el")             ; (find-file "production-code.el")
 (add-to-list 'load-path (concat init-scripts "skype/"))
 (require 'skype)
+(load "smooth-scroll-config.el")        ; (find-file "smooth-scroll-config.el")
 (load "spellchecking.el")               ; (find-file "spellchecking.el")
 (load "tetris-config.el")               ; (find-file "tetris-config.el")
 (load "timestamp.el")                   ; (find-file "timestamp.el")
