@@ -7,18 +7,25 @@
     Un modo que simula la funcionalidad de vi, me sera util para aprender
 *** TODO [#A] c++-mode
     Para editar codigo c++
-*** TODO [#B] lisp-mode
-    Para editar archivos con codigo lisp (Generalmente Emacs-Lisp)
-    (+ 1 1)
 *** TODO [#A] org-mode
     organizador con agenda, calendario y demas
+*** TODO org-trello
+    Ya cuando aprenda con trello seguimos
+*** TODO nyan-mode
+
+** Packages
+   - Lista: https://www.reddit.com/r/emacs/comments/42g6u9
+*** TODO helm
+*** TODO projectile
+*** TODO general-close
+    - https://github.com/emacs-berlin/general-close
+*** TODO flycheck-tip
+    - https://github.com/yuutayamada/flycheck-tip
+*** TODO comment-dwim-2
+    - https://github.com/remyferre/comment-dwim-2
 ** Otras
-*** TODO multiple-cursors
-    sistema para tener varios cursores editando a la vez el texto
+*** bonjourmadame
+
 ** Menos utiles
-*** TODO Emacs AlsaPlayer - Music without Jolts
-    reproductor de musica por consola
 * Para instalar
-  * multiple-cursors
-  * Emacs AlsaPlayer
   * evil-mode
