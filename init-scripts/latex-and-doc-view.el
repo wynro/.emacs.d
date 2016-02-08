@@ -1,5 +1,5 @@
 ;; Configuration combined for LaTeX (AUCTeX) and DocView
-;; Timestamp: <2016-02-05 - 20:51>
+;; Timestamp: <2016-02-07 - 11:02>
 
 ;; LaTeX
 ;; FIXME
@@ -13,7 +13,7 @@
 ;; (define-key doc-view-mode-map "g" (doc-view-revert-buffer 1 1))
 
 ;; Personalized command, not standard
-(setq pdf-latex-command "fullbibtex-p")
+(setq pdf-latex-command "fullbibtex-x")
 
 ;; Change compiler for compatibility reasons
 (defun latex-compiler-pdflatex ()
