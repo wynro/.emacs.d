@@ -12,8 +12,8 @@ exp/
 # Ignore session files
 session.*
 
-# Ignore emms cache
-# emms/cache
+# Ignore emms files
+emms/
 
 # Ignore url request
 url/
