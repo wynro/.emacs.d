@@ -11,7 +11,7 @@
 (load "emms-config.el")                 ; (find-file "emms-config.el")
 (load "eval-and-replace.el")            ; (find-file "eval-and-replace.el")
 (load "evil-config.el")                 ; (find-file "evil-config.el")
-(load "google-translate-config.el")     ; (find-file "google-translate-config.el")
+;; (load "google-translate-config.el")     ; (find-file "google-translate-config.el")
 (load "graphviz-dot-mode.el")           ; (find-file "graphviz-dot-mode")
 (load "init-config.el")                 ; (find-file "init-config.el")
 (load "isearch.el")                     ; (find-file "isearch.el")
