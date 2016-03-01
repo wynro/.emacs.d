@@ -1,0 +1,37 @@
+# -*- mode: snippet -*-
+# name: header
+# key: header
+# --
+%% Title: $1
+%% Author: ${2:Guillermo Robles}
+%% Timestamp: <>
+%% Descripcion: $3
+\documentclass[12pt,a4paper]{${4:article}}
+\input{preamble.sty}            % File with all packages
+                                % importation/configuration
+\input{commands.sty}            % File with all my defined commands
+
+%% Graphics importing configuration
+\graphicspath{{images/}{/home/guillermo/latex/images/}$5}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+%% Create index (can be comented to speed up a little compilation)
+\makeindex
+
+%% Titlepage configuration
+\logo{${6:logoUZ}}
+\subject{${7:Work subject}}
+\title{${8:Work title}}
+\author{${9:Guillermo Robles González - NIP: 604409}}
+\supervisor{$10}
+
+% It's Dangerous to Go Alone! Take This
+\begin{document}
+\maketitle                      % Titlepage
+\tableofcontents                % Table of contents (Section index)
+\clearpage                      % Blankpage after index (Index has its
+                                % own page)
+
+$0
+
+\end{document}
