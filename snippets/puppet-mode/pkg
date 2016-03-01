@@ -1,0 +1,8 @@
+# name: pkg { ... }
+# key: pkg
+# --
+package { "${1:name}":
+  ensure  => ${2:installedt},
+  source  => ${3:<source>},
+  require => Package[${4:<requiree>}];
+}
