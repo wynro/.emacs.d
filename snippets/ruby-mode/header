@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: header
+# key: header
+# --
+#!/usr/bin/env ruby
+#
+# Timestamp: <>
+# Author: ${1:Guillermo Robles}
+#
+# Description: ${2:description}
+
+$0
