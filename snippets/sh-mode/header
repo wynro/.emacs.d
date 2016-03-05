@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: function
+# key: f
+# --
+#!/bin/${1:sh}
+# Timestamp: <>
+# Author: ${2:Guillermo Robles}
+# 
+# ${3:description}
+

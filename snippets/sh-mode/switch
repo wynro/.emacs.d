@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: switch
+# key: case
+# --
+case ${1:variable} in
+     ${2:pattern})
+	${3:in-case-of-pattern}
+	;;
+     *)
+	${4:default}
+	;;
+esac
