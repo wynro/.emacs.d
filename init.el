@@ -61,6 +61,7 @@
 ;; Use the correct mode in every filetype (If this goes bigger than 3
 ;; or 4, move to his own file)
 (add-to-list 'auto-mode-alist '("\\.plx\\'" . perl-mode))
+(add-to-list 'auto-mode-alist '("\\.scala\\'" . scala-mode))
 (add-to-list 'auto-mode-alist '("\\.cc\\'" . c++-mode))
  
 ;; Changes
