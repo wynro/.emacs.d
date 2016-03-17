@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
-# name: function
-# key: f
+# name: header
+# key: header
 # --
 #!/bin/${1:sh}
 # Timestamp: <>
