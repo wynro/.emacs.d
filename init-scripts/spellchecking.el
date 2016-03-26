@@ -1,5 +1,5 @@
 ;; Spellchecking in multiple languages
-;; Timestamp: <2016-02-05 - 20:52>
+;; Timestamp: <2016-03-26 - 13:26>
 
 ;; Keybindings
 ;; - C-M-z s e: activate spellchecking in english
@@ -29,9 +29,9 @@
 (define-key spellchecking-map (kbd "s e") 'flyspell-mode)
 (define-key spellchecking-map (kbd "s s") 'flyspell-mode-es)
 (define-key spellchecking-map (kbd "b") 'flyspell-buffer)
-(define-key spellchecking-map (kbd "n") 'flyspell-goto-next-error)
-(define-key spellchecking-map (kbd "w") 'ispell-word)
-(define-key spellchecking-map (kbd "a") 'ispell-next-word)
+(define-key spellchecking-map (kbd "C-M-z") 'flyspell-goto-next-error)
+(define-key spellchecking-map (kbd "C-M-a") 'ispell-word)
+;; (define-key spellchecking-map (kbd "a") 'ispell-next-word)
 
 ;; (define-key spellchecking-map (kbd "x") 'flyspell-mode-es)
 ;; (global-set-key "C-M-x C-s C-e" 'flyspell-mode)
