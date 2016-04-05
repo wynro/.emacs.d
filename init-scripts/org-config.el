@@ -1,5 +1,4 @@
 ;; Org-mode configuration file
-;; Timestamp: <2015-10-20 - 23:22>
 
 ;; Experiments with org-mode, mainly keybindings
 ;; C-c a for agenda

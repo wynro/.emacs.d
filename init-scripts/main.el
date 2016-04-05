@@ -1,5 +1,4 @@
 ;; File that loads all the necessary files in the directory
-;; Timestamp: <2016-02-07 - 12:40>
 
 (load "backup.el")                      ; (find-file "backup.el")
 (load "buffer-defuns.el")               ; (find-file "buffer-defuns.el")

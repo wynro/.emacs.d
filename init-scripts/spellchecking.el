@@ -1,5 +1,4 @@
 ;; Spellchecking in multiple languages
-;; Timestamp: <2016-03-26 - 13:26>
 
 ;; Keybindings
 ;; - C-M-z s e: activate spellchecking in english

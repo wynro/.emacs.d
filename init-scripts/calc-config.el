@@ -1,5 +1,4 @@
 ;; Calc configuration file
-;; Timestamp: <2015-08-14 - 21:13>
 
 ;; Changes to calc
 (setq calc-window-height 14)

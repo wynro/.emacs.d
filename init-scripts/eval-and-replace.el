@@ -1,5 +1,4 @@
 ;; Adition of a new command to replace a elisp expression
-;; Timestamp: <2015-08-14 - 20:42>
 
 ;; Inclusion of a new combination (C-x e), which evaluates and
 ;; replaces the previous expression (in LISP type)

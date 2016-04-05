@@ -1,5 +1,4 @@
 ;; File that loads emms configuration
-;; Timestamp: <2016-02-10 - 10:34>
 
 (require 'emms-setup)
 (emms-all)

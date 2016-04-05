@@ -1,4 +1,3 @@
-;; Timestamp: <2016-02-08 - 13:40>
 ;; Configuration for smooth-scroll package
 
 (require 'smooth-scroll)

@@ -1,6 +1,4 @@
 ;; JDEE initializer
-;; Timestamp: <2015-10-27 - 11:42>
-
 
 ;; (defun jde-mode ()
 ;;   jdee-mode

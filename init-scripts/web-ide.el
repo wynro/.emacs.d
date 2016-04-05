@@ -1,6 +1,4 @@
 ;; Functions and configuration of the mweb IDE
-;;
-;; Timestamp: <2015-08-14 - 20:21>
 
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.json$" . js2-mode))

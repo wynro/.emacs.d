@@ -1,5 +1,4 @@
 ;; Configuration for tetris
-;; Timestamp: <2015-12-05 - 20:08>
 
 (require 'tetris)
 (setq tetris-score-file

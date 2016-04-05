@@ -1,5 +1,4 @@
 ;; Configuration of mc
-;; Timestamp:<2016-03-03 - 15:57>
 
 (global-set-key (kbd "C-c m l") 'mc-edit-lines)
 (global-set-key (kbd "C-c m a") 'mc-mark-all-dwim)

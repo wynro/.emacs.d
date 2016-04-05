@@ -1,5 +1,4 @@
 ;; Adjusting the web IDE
-;; Timestamp: <2015-11-03 - 10:18>
 
 (require 'multi-web-mode)
 (setq mweb-default-major-mode 'html-mode)

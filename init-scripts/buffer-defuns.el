@@ -1,5 +1,4 @@
 ;; Functions about buffers
-;; Timestamp: <2015-08-14 - 21:16>
 
 ;; Keybinding
 ;; - C-x 2: Open new frame at the right

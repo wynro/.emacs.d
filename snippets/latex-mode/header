@@ -4,7 +4,6 @@
 # --
 %% Title: $1
 %% Author: ${2:Guillermo Robles}
-%% Timestamp: <>
 %% Descripcion: $3
 \documentclass[12pt,a4paper]{${4:article}}
 \input{preamble.sty}            % File with all packages

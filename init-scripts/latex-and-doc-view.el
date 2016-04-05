@@ -1,5 +1,4 @@
 ;; Configuration combined for LaTeX (AUCTeX) and DocView
-;; Timestamp: <2016-02-07 - 11:02>
 
 ;; LaTeX
 ;; FIXME

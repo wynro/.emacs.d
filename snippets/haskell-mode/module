@@ -4,7 +4,6 @@
 # --
 {- | 
 Module       : ${1:Module name}
-Timestamp    : <2015-06-06 - 12:03>
 Description  : ${2:Short description}
 Copyright    : (c) Guillermo Robles, 2015
 License      : GPL-v3

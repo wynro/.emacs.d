@@ -3,7 +3,6 @@
 # key: header
 # --
 #!/bin/${1:sh}
-# Timestamp: <>
 # Author: ${2:Guillermo Robles}
 # 
 # ${3:description}

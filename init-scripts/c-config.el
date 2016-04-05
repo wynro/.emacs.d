@@ -1,5 +1,4 @@
 ;; Modifications for C coding
-;; Timestamp: <2015-08-14 - 20:31>
 
 ;; C coding standard as defined for Linux kernel
 (defun linux-c-mode ()

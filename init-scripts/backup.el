@@ -1,5 +1,4 @@
 ;; Multiple adjustments about how Emacs do the backup of files
-;; Timestamp: <2015-08-14 - 20:51>
 
 ;; Obtaining the backup path
 (defvar --backup-directory (concat user-emacs-directory "backups"))
