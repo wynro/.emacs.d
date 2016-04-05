@@ -37,10 +37,13 @@
 (defvar init-scripts (concat init-emacs.d "init-scripts/"))
 (add-to-list 'load-path init-scripts)
 
-;; Codification
+;; Codifications
 (prefer-coding-system 'utf-8)
 (setq coding-system-for-read 'utf-8)
 (setq coding-system-for-write 'utf-8)
+
+;; The damn tabs
+(setq-default indent-tabs-mode nil)
 
 ;; Loading the main configuration file
 (load "main.el")
