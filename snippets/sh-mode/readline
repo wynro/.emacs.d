@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: read line
+# key: read
+# --
+while read ${1:line}; do
+    $0
+done
