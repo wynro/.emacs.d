@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: read file line by line
+# key: read
+# --
+while read ${1:condition}; do
+    $0
+done
