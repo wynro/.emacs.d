@@ -20,3 +20,6 @@ url/
 
 # Ignore cookie files
 request/
+
+# Ignore emacs logging
+emacs.log
