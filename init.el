@@ -67,8 +67,8 @@
 (add-to-list 'auto-mode-alist '("\\.cc\\'" . c++-mode))
  
 ;; Changes
-(column-number-mode)   ;; Para que aparezca el numero de columna
-(show-paren-mode)      ;; Para que tenga emparejado de parentesis
+(column-number-mode)   ;; Show column number in the footer
+(show-paren-mode)      ;; Show line number in the footer
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
