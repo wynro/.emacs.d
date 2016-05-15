@@ -78,6 +78,9 @@
  '(haskell-mode-hook (quote (turn-on-haskell-indent)) t)
  '(inhibit-startup-screen t)
  ;; '(initial-buffer-choice (concat emacs.d "init-buffer.org"))
+ '(package-selected-packages
+   (quote
+    (haskell-mode emms jdee mc-extras undo-tree sqlplus smooth-scroll scala-mode puppet-mode php-mode php+-mode paredit nyan-mode nodejs-repl multiple-cursors multi-web-mode markdown-mode magit latex-preview-pane js2-mode iedit goto-chg erlang common-lisp-snippets clips-mode circe bash-completion auto-yasnippet)))
  '(send-mail-function (quote mailclient-send-it)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
