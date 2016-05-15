@@ -1,5 +1,4 @@
 ;; ^False, copied from the college original file, will grow as needed
-;; Time-stamp: <2016-04-05 - 12:50>
 
 ;; (defvar gnus-local-organization "CPS Universidad de Zaragoza")
 (setq gnus-local-organization "Rank")
