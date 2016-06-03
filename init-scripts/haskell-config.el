@@ -1,6 +1,6 @@
 ;; (require 'haskell-mode-autoloads)
 
-(load "haskell-mode.el")
+(add-to-list 'load-path (concat init-scripts "haskell-mode/"))
 (require 'haskell-mode)
 (require 'haskell-font-lock)
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)

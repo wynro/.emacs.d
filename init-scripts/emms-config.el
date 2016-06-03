@@ -1,5 +1,6 @@
 ;; File that loads emms configuration
 
+(add-to-list 'load-path (concat init-scripts "emms/lisp/"))
 (require 'emms-setup)
 (emms-all)
 (emms-default-players)

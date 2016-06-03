@@ -1,5 +1,7 @@
 ;; JDEE initializer
 
+(add-to-list 'load-path (concat init-scripts "jdee/"))
+
 ;; (defun jde-mode ()
 ;;   jdee-mode
 ;;   )
