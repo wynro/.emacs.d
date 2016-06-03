@@ -32,6 +32,7 @@
 (load "typing-practice.el")             ; (find-file "typing-practice.el")
 (load "undo-config.el")                 ; (find-file "undo-config.el")
 (load "web-ide.el")                     ; (find-file "web-ide.el")
+(load "ws-butler-config.el")            ; (find-file "ws-butler-config.el")
 ;; (java-snippets :fetcher github :repo "nekop/yasnippet-java-mode"
 ;;                :files ("*.el" "snippets"))
 (add-to-list 'load-path (concat init-scripts "yasnippet/"))
