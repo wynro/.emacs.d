@@ -23,3 +23,6 @@ request/
 
 # Ignore emacs logging
 emacs.log
+
+# Ignore TRAMP cache
+tramp
