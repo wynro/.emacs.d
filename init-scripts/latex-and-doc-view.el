@@ -4,7 +4,7 @@
 ;; FIXME
 ;; (defun latex-my-keys()
 ;;   "Modify keymaps used by `latex-mode'."
-;;   (local-set-key (kbd "C-c C-c") 'my-bold-word)
+;;   (local-set-key (kbd "C-c c") 'my-bold-word)
 ;;   )
 
 ;; DocView

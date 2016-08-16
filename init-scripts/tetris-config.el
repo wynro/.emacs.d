@@ -4,7 +4,7 @@
 (setq tetris-score-file
       "~/.emacs.d/games/tetris-scores")
 
-(global-set-key (kbd "C-c C-t") 'tetris)
+(global-set-key (kbd "C-c t") 'tetris)
 (define-key tetris-mode-map "n"     'tetris-start-game)
 (define-key tetris-mode-map "q"     'tetris-end-game)
 (define-key tetris-mode-map "p"     'tetris-pause-game)
