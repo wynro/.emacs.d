@@ -1,0 +1,6 @@
+# name: anchor { ... }
+# key: anchor
+# --
+anchor { '${1:class_name}::begin': } ->
+class { '::$1::${2:class}': } ->
+anchor { '$1::end': }

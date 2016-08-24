@@ -2,7 +2,7 @@
 # key: package
 # --
 package { "${1:name}":
-  ensure  => ${2:installedt},
+  ensure  => ${2:installed},
   source  => ${3:<source>},
   require => Package[${4:<requiree>}];
 }
