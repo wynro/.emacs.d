@@ -26,3 +26,6 @@ emacs.log
 
 # Ignore TRAMP cache
 tramp
+
+# Ignore JDEE cache
+semanticdb/
