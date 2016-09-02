@@ -2,6 +2,6 @@
 # name: code
 # key: code
 # --
-\begin{lstlisting}${2:[frame=single,basicstyle=\normal]}
+\begin{lstlisting}${2:[frame=single,basicstyle=\normalsize]}
 $0
 \end{lstlisting}
