@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: codesql
+# key: codesql
+# --
+\begin{lstlisting}${2:[frame=single,basicstyle=\normalsize,language=sql]}
+$0
+\end{lstlisting}

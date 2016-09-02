@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: codebash
+# key: codebash
+# --
+\begin{lstlisting}${2:[frame=single,basicstyle=\normalsize,language=bash]}
+$0
+\end{lstlisting}

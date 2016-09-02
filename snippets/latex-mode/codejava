@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: codejava
+# key: codejava
+# --
+\begin{lstlisting}${2:[frame=single,basicstyle=\normalsize,language=java]}
+$0
+\end{lstlisting}
