@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: codexml
+# key: codexml
+# --
+\begin{lstlisting}${2:[frame=single,basicstyle=\normalsize,language=xml]}
+$0
+\end{lstlisting}
