@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: header
 # key: header
+# expand-env: ((yas-indent-line 0))
 # --
 %% Title: $1
 %% Author: ${2:Guillermo Robles}
