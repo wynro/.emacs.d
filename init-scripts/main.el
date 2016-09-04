@@ -9,7 +9,7 @@
 (load "eval-and-replace.el")            ; (find-file "eval-and-replace.el")
 (load "evil-config.el")                 ; (find-file "evil-config.el")
 ;; (load "google-translate-config.el")     ; (find-file "google-translate-config.el")
-(load "graphviz-dot-mode.el")           ; (find-file "graphviz-dot-mode")
+(load "graphviz-dot-mode.el")           ; (find-file "graphviz-dot-mode.el")
 (load "init-config.el")                 ; (find-file "init-config.el")
 (load "isearch.el")                     ; (find-file "isearch.el")
 (load "jdee-config.el")                 ; (find-file "jdee-config.el")
