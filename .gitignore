@@ -29,3 +29,6 @@ tramp
 
 # Ignore JDEE cache
 semanticdb/
+
+# Ignore package readmes
+elpa/*-readme.txt
