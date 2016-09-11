@@ -1,5 +1,6 @@
 ;; File that loads all the necessary files in the directory
 
+(load "auctex-config.el")               ; (find-file "auctex-config.el")
 (load "backup.el")                      ; (find-file "backup.el")
 (load "buffer-defuns.el")               ; (find-file "buffer-defuns.el")
 (load "calc-config.el")                 ; (find-file "calc-config.el")
