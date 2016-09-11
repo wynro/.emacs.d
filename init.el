@@ -79,7 +79,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (projectile haskell-mode emms jdee mc-extras undo-tree sqlplus smooth-scroll scala-mode puppet-mode php-mode php+-mode paredit nyan-mode nodejs-repl multiple-cursors multi-web-mode markdown-mode magit latex-preview-pane js2-mode iedit goto-chg erlang common-lisp-snippets clips-mode circe bash-completion auto-yasnippet)))
+    (helm projectile haskell-mode emms jdee mc-extras undo-tree sqlplus smooth-scroll scala-mode puppet-mode php-mode php+-mode paredit nyan-mode nodejs-repl multiple-cursors multi-web-mode markdown-mode magit latex-preview-pane js2-mode iedit goto-chg erlang common-lisp-snippets clips-mode circe bash-completion auto-yasnippet)))
  '(send-mail-function (quote mailclient-send-it)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
