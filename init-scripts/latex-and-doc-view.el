@@ -5,7 +5,9 @@
 ;; (defun latex-my-keys()
 ;;   "Modify keymaps used by `latex-mode'."
 ;;   (local-set-key (kbd "C-c c") 'my-bold-word)
-;;   )
+;;   
+(add-to-list 'load-path (concat init-scripts "latex-preview-pane/"))
+(load "latex-preview-pane.el")
 
 ;; DocView
 
