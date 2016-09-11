@@ -81,7 +81,8 @@
    (quote
     (helm projectile haskell-mode emms jdee mc-extras undo-tree sqlplus smooth-scroll scala-mode puppet-mode php-mode php+-mode paredit nyan-mode nodejs-repl multiple-cursors multi-web-mode markdown-mode magit latex-preview-pane js2-mode iedit goto-chg erlang common-lisp-snippets clips-mode circe bash-completion auto-yasnippet)))
  '(send-mail-function (quote mailclient-send-it))
- '(use-minimal-error-page (quote on)))
+ '(use-minimal-error-page (quote on))
+ '(use-minimal-welcome-page (quote on)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
