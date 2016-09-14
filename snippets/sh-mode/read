@@ -2,6 +2,6 @@
 # name: read file line by line
 # key: read
 # --
-while read ${1:condition}; do
+while read ${1:line}; do
     $0
 done

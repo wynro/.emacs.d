@@ -1,0 +1,10 @@
+# name: header
+# key: header
+# --
+#!/usr/bin/perl
+#${1:filename}
+
+use strict;
+use warnings;
+
+$0
