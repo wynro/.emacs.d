@@ -79,7 +79,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (dockerfile-mode helm projectile haskell-mode emms jdee mc-extras undo-tree sqlplus smooth-scroll scala-mode puppet-mode php-mode php+-mode paredit nyan-mode nodejs-repl multiple-cursors multi-web-mode markdown-mode magit latex-preview-pane js2-mode iedit goto-chg erlang common-lisp-snippets clips-mode circe bash-completion auto-yasnippet)))
+    (helm-projectile yaml-mode dockerfile-mode helm projectile haskell-mode emms jdee mc-extras undo-tree sqlplus smooth-scroll scala-mode puppet-mode php-mode php+-mode paredit nyan-mode nodejs-repl multiple-cursors multi-web-mode markdown-mode magit latex-preview-pane js2-mode iedit goto-chg erlang common-lisp-snippets clips-mode circe bash-completion auto-yasnippet)))
  '(send-mail-function (quote mailclient-send-it))
  '(use-minimal-error-page (quote on))
  '(use-minimal-welcome-page (quote on)))
