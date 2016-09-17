@@ -31,6 +31,9 @@
 
 (package-initialize)
 
+;; Temporal fix for wrong ELPA signature
+(setq package-check-signature nil)
+
 ;; Expanding the load-path
 (defvar init-emacs.d (concat (expand-file-name "~") "/.emacs.d/"))
 (defvar init-scripts (concat init-emacs.d "init-scripts/"))
