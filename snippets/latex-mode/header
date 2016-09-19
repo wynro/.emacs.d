@@ -3,22 +3,80 @@
 # key: header
 # expand-env: ((yas-indent-line 0))
 # --
-%% Title: $1
-%% Author: ${2:Guillermo Robles}
-%% Descripcion: $3
-\documentclass[12pt,a4paper]{${4:article}}
-\input{preamble.sty}            % File with all packages
-                                % importation/configuration
-\input{commands.sty}            % File with all my defined commands
+% Title: $1
+% Author: ${2:Guillermo Robles}
+% Descripcion: $3
 
-%% Graphics importing configuration
-\graphicspath{{images/}{/home/guillermo/latex/images/}$5}
+\documentclass[a4paper]{${4:article}}      % Basic format
+\usepackage{polyglossia}              % Package to manage language specific stuff
+\setmainlanguage{spanish}             % Polyglossia main language
+
+\usepackage{fontspec}                 % Font works
+\usepackage[dvipsnames,table]{xcolor} % Colors
+\PassOptionsToPackage{hyphens}{url}   % Configure url package
+\usepackage{hyperref}                 % Allow hyperlinks
+
+% Configure page geometry
+% \geometry{
+%   a4paper,
+%   total={170mm,257mm},
+%   left=20mm,
+%   top=20mm,
+% }
+
+\usepackage[]{unicode-math}           % Unicode math symbols
+% \setmainfont{XITS}
+% \setmathfont{XITS Math}
+
+\usepackage{listings}                 % Allows insertion of source code blocks into the file
+\usepackage{makeidx}                  % Autogeneration of indexes
+\usepackage{pgf}                      % Drawer/Plotter
+% \usepackage{media9}                   % For Videos and music
+
+\usepackage{tikz}                     % Multiple diagram types
+\usetikzlibrary{arrows,automata,shapes,positioning,chains,fit}
+\usepackage[hypcap]{caption}          % Modify figure's captions
+
+\usepackage{multicol}                 % So I can do multicolumn cells in tables
+\usepackage{multirow}                 % So I can do multirow cells in tables
+
+\usepackage{enumitem}                 % Control of lists environments
+
+% Bibliography
+\usepackage[backend=bibtex,sorting=none]{biblatex}
+\addbibresource{}
+
+\usepackage{wynroTitlePage}           % My titles
+
+\input{commands.sty}                  % File with all my defined commands
+
+\usepackage{lipsum}                   % Test text
+\usepackage{fancyhdr}                 % Allows complex headers/footers
+\renewcommand{\headrulewidth}{0.0pt}  % Add header rule
+\renewcommand{\footrulewidth}{0.0pt}  % Add footer rule
+
+\fancyhead{}                          % Activate fancy headers
+\fancyfoot{}                          % Activate fanvy footers
+% \setlength{\headheight}{10mm}         % Set header length
+% \setlength{\headsep}{5mm}             % Set header separation
+\pagestyle{fancy}                     % Apply fancyhdr changes
+
+% All the headers and footers
+\lhead{}
+\rhead{}
+\chead{}
+\lfoot{}
+\rfoot{}
+\cfoot{\thepage}
+
+% Graphics importing configuration
+\graphicspath{{images/}{/home/guillermo/latex/images/}}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
-%% Create index (can be comented to speed up a little compilation)
+% Create index (can be comented to speed up a little compilation)
 \makeindex
 
-%% Titlepage configuration
+% Titlepage configuration
 \logo{${6:logoUZ}}
 \subject{${7:Work subject}}
 \title{${8:Work title}}
