@@ -7,7 +7,7 @@
 % Author: ${2:Guillermo Robles}
 % Descripcion: $3
 
-\documentclass[a4paper]{${4:article}}      % Basic format
+\documentclass[11pt,a4paper]{${4:article}} % Basic format
 \usepackage{polyglossia}              % Package to manage language specific stuff
 \setmainlanguage{spanish}             % Polyglossia main language
 
@@ -44,7 +44,7 @@
 
 % Bibliography
 \usepackage[backend=bibtex,sorting=none]{biblatex}
-\addbibresource{}
+\addbibresource{${6:mybib}}
 
 \usepackage{wynroTitlePage}           % My titles
 
@@ -77,19 +77,26 @@
 \makeindex
 
 % Titlepage configuration
-\logo{${6:logoUZ}}
-\subject{${7:Work subject}}
-\title{${8:Work title}}
-\author{${9:Guillermo Robles González - NIP: 604409}}
-\supervisor{$10}
+\logo{${7:logoUZ}}
+\subject{${8:Work subject}}
+\title{${9:Work title}}
+\author{${10:Guillermo Robles González - NIP: 604409}}
+\supervisormsg{${11:Supervisado por:}}
+\supervisor{$12}
 
 % It's Dangerous to Go Alone! Take This
 \begin{document}
+${13:\thispagestyle{empty}           % Eliminate style from title page
 \maketitle                      % Titlepage
+}${14:\thispagestyle{empty}           % Eliminate style from index page
 \tableofcontents                % Table of contents (Section index)
 \clearpage                      % Blankpage after index (Index has its
                                 % own page)
+}\setcounter{page}{1}            % Reset page counters
 
 $0
+
+\clearpage
+\printbibliography
 
 \end{document}
