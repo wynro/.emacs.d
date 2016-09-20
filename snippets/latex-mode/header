@@ -50,6 +50,8 @@
 
 \input{commands.sty}                  % File with all my defined commands
 
+\usepackage{lastpage}
+
 \usepackage{lipsum}                   % Test text
 \usepackage{fancyhdr}                 % Allows complex headers/footers
 \renewcommand{\headrulewidth}{0.0pt}  % Add header rule
@@ -67,7 +69,7 @@
 \chead{}
 \lfoot{}
 \rfoot{}
-\cfoot{\thepage}
+\cfoot{\thepage/\pageref*{LastPage}}
 
 % Graphics importing configuration
 \graphicspath{{images/}{/home/guillermo/latex/images/}}
