@@ -1,0 +1,7 @@
+# name : Clear Screen
+# contributor : Guillermo Robles
+# key: clearscreen
+# For GNUCobol
+# --
+DISPLAY SPACES AT 0101 WITH BLANK SCREEN.
+$0

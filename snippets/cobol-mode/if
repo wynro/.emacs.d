@@ -1,0 +1,7 @@
+# name : IF statement
+# contributor : Guillermo Robles
+# key: if
+# For GNUCobol
+# --
+IF ${1:}condition
+   $0

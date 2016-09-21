@@ -1,0 +1,9 @@
+# name : IF-ELSE statement
+# contributor : Guillermo Robles
+# key: ifel
+# For GNUCobol
+# --
+IF ${1:}condition
+   $0
+ELSE
+   

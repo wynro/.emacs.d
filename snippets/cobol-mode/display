@@ -1,0 +1,7 @@
+# name : DISPLAY statement
+# contributor : Guillermo Robles
+# key: display
+# For GNUCobol
+# --
+DISPLAY ${1:string} AT ${2:0101}.
+$0

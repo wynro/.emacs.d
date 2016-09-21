@@ -5,6 +5,7 @@
 (load "buffer-defuns.el")               ; (find-file "buffer-defuns.el")
 (load "calc-config.el")                 ; (find-file "calc-config.el")
 (load "c-config.el")                    ; (find-file "c-config.el")
+(load "cobol-mode-config.el")           ; (find-file "cobol-mode-config.el")
 (load "haskell-config.el")              ; (find-file "haskell-config.el")
 (load "emms-config.el")                 ; (find-file "emms-config.el")
 (load "eval-and-replace.el")            ; (find-file "eval-and-replace.el")
