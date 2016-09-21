@@ -52,7 +52,7 @@
 
 \usepackage{lastpage}
 
-\usepackage{lipsum}                   % Test text
+% \usepackage{lipsum}                   % Test text
 \usepackage{fancyhdr}                 % Allows complex headers/footers
 \renewcommand{\headrulewidth}{0.0pt}  % Add header rule
 \renewcommand{\footrulewidth}{0.0pt}  % Add footer rule
