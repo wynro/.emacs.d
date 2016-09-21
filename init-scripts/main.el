@@ -28,6 +28,7 @@
 (load "smooth-scrolling.el")            ; (find-file "smooth-scrolling.el")
 (load "spellchecking.el")               ; (find-file "spellchecking.el")
 (load "tetris-config.el")               ; (find-file "tetris-config.el")
+(load "theme-config.el")               ; (find-file "tetris-config.el")
 (load "timestamp.el")                   ; (find-file "timestamp.el")
 (load "typing-practice.el")             ; (find-file "typing-practice.el")
 (load "undo-config.el")                 ; (find-file "undo-config.el")
