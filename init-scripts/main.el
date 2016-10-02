@@ -17,6 +17,7 @@
 (load "highlight-chars-config.el")      ; (find-file "highlight-chars-config.el")
 (load "init-config.el")                 ; (find-file "init-config.el")
 (load "isearch.el")                     ; (find-file "isearch.el")
+(load "ipcalc-config.el")               ; (find-file "ipcalc-config.el")
 (load "jdee-config.el")                 ; (find-file "jdee-config.el")
 (load "latex-and-doc-view.el")          ; (find-file "latex-and-doc-view.el")
 (load "magit-config.el")                ; (find-file "magit-config.el")
