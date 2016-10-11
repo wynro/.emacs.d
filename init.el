@@ -70,6 +70,7 @@
 (add-to-list 'auto-mode-alist '("\\.cc\\'" . c++-mode))
  
 ;; Changes
+(linum-mode)           ;; Show line numbers at the left of the file
 (column-number-mode)   ;; Show column number in the footer
 (show-paren-mode)      ;; Show line number in the footer
 
