@@ -68,7 +68,7 @@
 (add-to-list 'auto-mode-alist '("\\.plx\\'" . perl-mode))
 (add-to-list 'auto-mode-alist '("\\.scala\\'" . scala-mode))
 (add-to-list 'auto-mode-alist '("\\.cc\\'" . c++-mode))
- 
+
 ;; Changes
 (linum-mode)           ;; Show line numbers at the left of the file
 (column-number-mode)   ;; Show column number in the footer
