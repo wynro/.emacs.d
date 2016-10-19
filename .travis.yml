@@ -1,0 +1,16 @@
+language: generic
+
+# Install latest emacs version
+install:
+  - sudo add-apt-repository -y ppa:ubuntu-elisp/ppa &&
+    sudo apt-get -qq update &&
+    sudo apt-get -qq -f install &&
+    sudo apt-get -qq install emacs-snapshot &&
+    sudo apt-get -qq install emacs-snapshot-el;
+
+# Start emacs without graphics and load init.el, check the output for valid string
+script:
+  - emacs-snapshot -batch -l init.el | grep "\"Config loaded\""
+
+notifications:
+  - email: false

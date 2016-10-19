@@ -35,9 +35,14 @@
 (setq package-check-signature nil)
 
 ;; Expanding the load-path
-(defvar init-emacs.d (concat (expand-file-name "~") "/.emacs.d/"))
-(defvar init-scripts (concat init-emacs.d "init-scripts/"))
-(add-to-list 'load-path init-scripts)
+(if noninteractive
+    (defvar init-scripts "./init-scripts/")
+  (progn
+    (defvar init-emacs.d (concat (expand-file-name "~") "/.emacs.d/"))
+    (defvar init-scripts (concat init-emacs.d "init-scripts/"))
+    )
+  )
+(add-to-list 'load-path  init-scripts)
 
 ;; Codifications
 (prefer-coding-system 'utf-8)
@@ -47,6 +52,7 @@
 ;; The damn tabs
 (setq-default indent-tabs-mode nil)
 
+(print (concat "Loading from " init-scripts))
 ;; Loading the main configuration file
 (load "main.el")
 
@@ -98,3 +104,6 @@
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
+
+;; Testing stuff
+(print "Config loaded")
