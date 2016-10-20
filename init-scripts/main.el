@@ -26,7 +26,7 @@
 (load "magit-config.el")                ; (find-file "magit-config.el")
 ;; (load "main.el")                     ; Unnecesary/infinite loop
 (load "make-config.el")                 ; (find-file "make-config.el")
-(load "mc-config.el")			; (find-file "mc-config.el")
+(load "mc-config.el")                   ; (find-file "mc-config.el")
 ;; (load "multi-web-mode.el")           ; Loaded by mweb-config.el
 (load "mweb-config.el")                 ; (find-file "mweb-config.el")
 (load "org-config.el")                  ; (find-file "org-config.el")
@@ -36,11 +36,11 @@
 (load "tetris-config.el")               ; (find-file "tetris-config.el")
 (if (not noninteractive)                ; Do not load theme in noninteractive mode (speedup)
     (load "theme-config.el")            ; (find-file "tetris-config.el")
-)
+  )
 (load "timestamp.el")                   ; (find-file "timestamp.el")
 (load "typing-practice.el")             ; (find-file "typing-practice.el")
 (load "undo-config.el")                 ; (find-file "undo-config.el")
 (load "web-ide.el")                     ; (find-file "web-ide.el")
 (if (not noninteractive)                ; Do not load yas in noninteractive mode (speedup)
     (load "yasnippet-config.el")        ; (find-file "yasnippet-config.el")
-)
+  )
