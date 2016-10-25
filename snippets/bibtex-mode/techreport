@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: techreport
+# key: techreport
+# expand-env: ((require-final-newline 'false) (yas-indent-line 0))
+# --
+@techreport{ ${1:title},
+  author       = {${2:author}},
+  title        = {${3:title}},
+  institution  = {${4:institution}},
+  year         = {${5:year}},
+  number       = {${6:number}},
+  address      = {${7:address}},
+  month        = {${8:month}},
+  note         = {${9:note}}
+}
+
+$0

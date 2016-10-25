@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: manual
+# key: manual
+# expand-env: ((require-final-newline 'false) (yas-indent-line 0))
+# --
+@manual{ ${1:title},
+  title        = {${2:title}},
+  author       = {${3:author}},
+  organization = {${4:organization}},
+  address      = {${5:address}},
+  edition      = {${6:edition}},
+  month        = {${7:month}},
+  year         = {${8:year}},
+  note         = {${9:note}},
+}
+
+$0

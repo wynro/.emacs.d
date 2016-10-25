@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: article
+# key: article
+# expand-env: ((require-final-newline 'false) (yas-indent-line 0))
+# --
+@article{ ${1:title},
+  author  = {${2:author}},
+  title   = {${3:title}},
+  journal = {${4:journal}},
+  year    = {${5:year}},
+  number  = {${6:number}},
+  pages   = {${7:pages}},
+  month   = {${8:month}},
+  note    = {Accesed: `(format-time-string "%Y/%m/%d")`$9},
+  volume  = {${10:volume}}
+}
+
+$0
