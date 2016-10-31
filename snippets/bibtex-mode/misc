@@ -4,12 +4,12 @@
 # expand-env: ((require-final-newline 'false) (yas-indent-line 0))
 # --
 @misc { ${1:title},
-    author = {${2:author}},
-    title = {${3:title}},
+    author       = {${2:author}},
+    title        = {${3:title}},
     howpublished = {${4:\url{${5:url}}}},${6:
-    month = {${7:month}},}
-    year = {${8:year}},
-    note = {Accesed: `(format-time-string "%Y/%m/%d")`$9}
+    month        = {${7:month}},}
+    year         = {${8:year}},
+    note         = {Accesed: `(format-time-string "%Y/%m/%d")`$9}
 }
 
 $0
