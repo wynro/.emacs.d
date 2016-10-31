@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: codepython
+# key: codepython
+# --
+\begin{lstlisting}${2:[frame=single,basicstyle=\normalsize,language=python]}
+$0
+\end{lstlisting}

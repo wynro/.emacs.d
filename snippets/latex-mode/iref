@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: iref
+# key: iref
+# --
+\iref{${1:link}}{${2:text}}$0
