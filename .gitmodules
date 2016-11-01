@@ -1,3 +1,4 @@
 [submodule "init-scripts/latex-preview-pane"]
 	path = init-scripts/latex-preview-pane
 	url = https://github.com/wynro/latex-preview-pane.git
+  branch = master
