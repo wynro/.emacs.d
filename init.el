@@ -41,13 +41,8 @@
 (setq package-check-signature nil)
 
 ;; Expanding the load-path
-(if noninteractive
-    (defvar init-scripts "./init-scripts/")
-  (progn
-    (defvar init-emacs.d (concat (expand-file-name "~") "/.emacs.d/"))
-    (defvar init-scripts (concat init-emacs.d "init-scripts/"))
-    )
-  )
+(defvar init-emacs.d (concat (expand-file-name "~") "/.emacs.d/"))
+(defvar init-scripts (concat init-emacs.d "init-scripts/"))
 (add-to-list 'load-path  init-scripts)
 
 ;; Codifications
