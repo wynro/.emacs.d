@@ -16,20 +16,26 @@
 ;; Aditions, if something start to fail, look here
 
 ;; Repositories
+;; http://stackoverflow.com/questions/10092322/how-to-automatically-install-emacs-packages-by-specifying-a-list-of-package-name
 (require 'package)
+; list the packages you want
+(setq package-list '(company color-theme-modern yaml-mode dockerfile-mode projectile haskell-mode emms mc-extras undo-tree smooth-scroll scala-mode puppet-mode php-mode paredit nyan-mode nodejs-repl multiple-cursors multi-web-mode markdown-mode magit js2-mode iedit erlang common-lisp-snippets clips-mode circe bash-completion auto-yasnippet))
+
+; list the repositories containing them
+(setq package-archives '(("melpa-stable" . "https://stable.melpa.org/packages/")
+                         ("gnu" . "http://elpa.gnu.org/packages/")))
+
+; activate all the packages (in particular autoloads)
 (package-initialize)
 
-(when (< emacs-major-version 24)
-  ;; For important compatibility libraries like cl-lib
-  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+; fetch the list of packages available
+(unless package-archive-contents
+  (package-refresh-contents))
 
-;; Package archive
-(add-to-list 'package-archives
-	     '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-;; (add-to-list 'package-archives
-;; 	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
-
-(package-initialize)
+; install the missing packages
+(dolist (package package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
 
 ;; Temporal fix for wrong ELPA signature
 (setq package-check-signature nil)
@@ -89,7 +95,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (company color-theme-modern helm-projectile yaml-mode dockerfile-mode helm projectile haskell-mode emms jdee mc-extras undo-tree sqlplus smooth-scroll scala-mode puppet-mode php-mode php+-mode paredit nyan-mode nodejs-repl multiple-cursors multi-web-mode markdown-mode magit js2-mode iedit goto-chg erlang common-lisp-snippets clips-mode circe bash-completion auto-yasnippet)))
+    (auto-yasnippet bash-completion circe clips-mode common-lisp-snippets erlang iedit js2-mode magit markdown-mode multi-web-mode nodejs-repl nyan-mode paredit php-mode puppet-mode scala-mode smooth-scroll undo-tree mc-extras emms haskell-mode projectile dockerfile-mode yaml-mode color-theme-modern company)))
  '(send-mail-function (quote mailclient-send-it))
  '(use-minimal-error-page (quote on))
  '(use-minimal-welcome-page (quote on)))
