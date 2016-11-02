@@ -7,7 +7,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (auto-yasnippet bash-completion circe clips-mode common-lisp-snippets erlang iedit js2-mode magit markdown-mode multi-web-mode nodejs-repl nyan-mode paredit php-mode puppet-mode scala-mode smooth-scroll undo-tree mc-extras emms haskell-mode projectile dockerfile-mode yaml-mode color-theme-modern company)))
+    (auctex auto-yasnippet bash-completion circe clips-mode common-lisp-snippets erlang iedit js2-mode magit markdown-mode multi-web-mode nodejs-repl nyan-mode paredit php-mode puppet-mode scala-mode smooth-scroll undo-tree mc-extras emms haskell-mode projectile dockerfile-mode yaml-mode color-theme-modern company)))
  '(send-mail-function (quote mailclient-send-it))
  '(use-minimal-error-page (quote on))
  '(use-minimal-welcome-page (quote on)))

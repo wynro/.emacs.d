@@ -1,7 +1,7 @@
 ;; AUCTeX configuration
 
-(add-to-list 'load-path (concat init-scripts "auctex/"))
-(load "auctex.el")
+;;(add-to-list 'load-path (concat init-scripts "auctex/"))
+;;(load "auctex.el")
 
 ;; Activate autosaving
 (setq TeX-auto-save t)

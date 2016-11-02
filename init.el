@@ -19,7 +19,7 @@
 ;; http://stackoverflow.com/questions/10092322/how-to-automatically-install-emacs-packages-by-specifying-a-list-of-package-name
 (require 'package)
 ; list the packages you want
-(setq package-list '(company color-theme-modern yaml-mode dockerfile-mode projectile haskell-mode emms mc-extras undo-tree smooth-scroll scala-mode puppet-mode php-mode paredit nyan-mode nodejs-repl multiple-cursors multi-web-mode markdown-mode magit js2-mode iedit erlang common-lisp-snippets clips-mode circe bash-completion auto-yasnippet))
+(setq package-list '(auctex company color-theme-modern yaml-mode dockerfile-mode projectile haskell-mode emms mc-extras undo-tree smooth-scroll scala-mode puppet-mode php-mode paredit nyan-mode nodejs-repl multiple-cursors multi-web-mode markdown-mode magit js2-mode iedit erlang common-lisp-snippets clips-mode circe bash-completion auto-yasnippet))
 
 ; list the repositories containing them
 (setq package-archives '(("melpa-stable" . "https://stable.melpa.org/packages/")
@@ -48,8 +48,8 @@
 
 ;; Codifications
 (prefer-coding-system 'utf-8)
-(setq coding-system-for-read 'utf-8)
-(setq coding-system-for-write 'utf-8)
+;;(setq coding-system-for-read 'utf-8)
+;;(setq coding-system-for-write 'utf-8)
 
 ;; The damn tabs
 (setq-default indent-tabs-mode nil)
