@@ -1,0 +1,5 @@
+(add-to-list 'load-path (concat init-scripts "dashboard/"))
+(require 'dashboard)
+(setq dashboard-items '((recents  . 5)
+                        (projects . 5)))
+(dashboard-setup-startup-hook)

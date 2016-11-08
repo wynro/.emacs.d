@@ -41,3 +41,6 @@ elpa/archives/
 
 # Ignore `package` directory
 elpa/
+
+# Ignore recent files list
+recentf

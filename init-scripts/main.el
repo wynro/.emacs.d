@@ -8,6 +8,7 @@
 (load "cobol-mode-config.el")           ; (find-file "cobol-mode-config.el")
 (load "company-mode-config.el")         ; (find-file "company-mode-config.el")
 (load "column-marker-config.el")        ; (find-file "column-marker-config.el")
+;; (load "dashboard-config.el")            ; (find-file "emacs-dashboard-config.el")
 (load "haskell-config.el")              ; (find-file "haskell-config.el")
 (load "emms-config.el")                 ; (find-file "emms-config.el")
 (load "eval-and-replace.el")            ; (find-file "eval-and-replace.el")
