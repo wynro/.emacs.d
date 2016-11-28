@@ -19,7 +19,7 @@
 ;; http://stackoverflow.com/questions/10092322/how-to-automatically-install-emacs-packages-by-specifying-a-list-of-package-name
 (require 'package)
 ; list the packages you want
-(setq package-list '(csv-mode lua-mode gnuplot page-break-lines elnode web-server auctex company color-theme-modern yaml-mode dockerfile-mode projectile haskell-mode emms mc-extras undo-tree smooth-scroll scala-mode puppet-mode php-mode paredit nyan-mode nodejs-repl multiple-cursors multi-web-mode markdown-mode magit js2-mode iedit erlang common-lisp-snippets clips-mode circe bash-completion auto-yasnippet))
+(setq package-list '(auctex auto-yasnippet bash-completion circe clips-mode color-theme-modern common-lisp-snippets company csv-mode dockerfile-mode elnode emms erlang gnuplot haskell-mode iedit js2-mode lua-mode magit markdown-mode mc-extras multi-web-mode multiple-cursors nodejs-repl nyan-mode page-break-lines paredit php-mode projectile puppet-mode scala-mode smooth-scroll undo-tree web-server yaml-mode))
 
 ; list the repositories containing them
 (setq package-archives '(("melpa-stable" . "https://stable.melpa.org/packages/")
