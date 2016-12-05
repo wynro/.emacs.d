@@ -1,8 +1,18 @@
 ;; Configuration combined for LaTeX (AUCTeX) and latex-preview-pane
 
 ;; AUCTeX
-(setq-default TeX-engine 'xetex)
-(setq-default TeX-PDF-mode t)
+;;(add-to-list 'load-path (concat init-scripts "auctex/"))
+;;(load "auctex.el")
+
+(defvar TeX-auto-save t) ;; Activate autosaving
+
+(defvar TeX-parse-self t) ;; Use document parsing (in order to get
+                          ;; support for different packages)
+
+(setq-default TeX-master nil) ;; Useful for multifile documents
+
+(setq-default TeX-engine 'xetex) ;; Configure TeX engine
+(setq-default TeX-PDF-mode t)    ;; Output to PDF by default
 
 ;; latex-preview-pane
 ;; Manually load latex-preview-pane
