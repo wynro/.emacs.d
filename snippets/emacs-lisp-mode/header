@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: header
+# key: header
+# --
+;;; ${1:`(let ((path (buffer-file-name))) (if path (replace-regexp-in-string (file-name-directory (buffer-file-name)) "" (buffer-file-name)) "filename.el"))`} --- ${2:short description}
+;;; Commentary:
+;;; ${3:long description}
+;;; Code:
+
+`yas-selected-text`$0
+(provide '${1:$(replace-regexp-in-string "\.el" "" yas-text)})
+;;; $1 ends here

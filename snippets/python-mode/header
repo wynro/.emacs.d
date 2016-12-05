@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: header
+# key: header
+# --
+#!/usr/sbin/env python
+"""
+${1:description}
+
+Author: ${2:Guillermo Robles}
+"""
+
+$0
