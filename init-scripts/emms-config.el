@@ -2,7 +2,8 @@
 
 (emms-all)
 (emms-default-players)
-(setq emms-source-file-default-directory "/media/guillermo/WD_wynro/Music/")
+(defvar emms-source-file-default-directory)
+(setq emms-source-file-default-directory "~/Music/")
 
 ;; (define-prefix-command 'emms-map)
 (global-set-key (kbd "C-'") 'emms-playlist-mode-go)
