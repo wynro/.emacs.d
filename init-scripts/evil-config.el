@@ -1,5 +1,10 @@
-;; evil-mode configuration
+;;; evil-config.el --- Evil configuration
+;;; Commentary:
+;;;
+;;; Code:
 
-;; (push "~/.emacs.d/evil" 'load-path)
 ;; (require 'evil)
 ;; (evil-mode 0)
+
+(provide 'evil-config)
+;;; evil-config.el ends here

@@ -1,6 +1,8 @@
+;;; main-config.el --- Main configuration file
+;;; Commentary:
 ;; File that loads all the necessary files in the directory
 
-(load "auctex-config.el")               ; (find-file "auctex-config.el")
+;;; Code:
 (load "backup.el")                      ; (find-file "backup.el")
 (load "buffer-defuns.el")               ; (find-file "buffer-defuns.el")
 (load "calc-config.el")                 ; (find-file "calc-config.el")
@@ -9,13 +11,14 @@
 (load "company-mode-config.el")         ; (find-file "company-mode-config.el")
 (load "column-marker-config.el")        ; (find-file "column-marker-config.el")
 ;; (load "dashboard-config.el")            ; (find-file "emacs-dashboard-config.el")
+(load "flycheck-config.el")             ; (find-file "flycheck-config.el")
 (load "haskell-config.el")              ; (find-file "haskell-config.el")
 (load "emms-config.el")                 ; (find-file "emms-config.el")
 (load "eval-and-replace.el")            ; (find-file "eval-and-replace.el")
 (load "evil-config.el")                 ; (find-file "evil-config.el")
 ;; (load "google-translate-config.el")     ; (find-file "google-translate-config.el")
 (load "functions.el")                   ; (find-file "functions.el")
-(load "graphviz-dot-mode.el")           ; (find-file "graphviz-dot-mode.el")
+(load "graphviz-dot-mode-config.el")           ; (find-file "graphviz-dot-mode.el")
 (load "highlight-chars-config.el")      ; (find-file "highlight-chars-config.el")
 (load "init-config.el")                 ; (find-file "init-config.el")
 (load "isearch.el")                     ; (find-file "isearch.el")
@@ -29,7 +32,6 @@
 ;; (load "multi-web-mode.el")           ; Loaded by mweb-config.el
 (load "mweb-config.el")                 ; (find-file "mweb-config.el")
 (load "org-config.el")                  ; (find-file "org-config.el")
-(load "production-code.el")             ; (find-file "production-code.el")
 (load "smooth-scrolling.el")            ; (find-file "smooth-scrolling.el")
 (load "spellchecking.el")               ; (find-file "spellchecking.el")
 (load "tetris-config.el")               ; (find-file "tetris-config.el")
@@ -39,3 +41,6 @@
 (load "undo-config.el")                 ; (find-file "undo-config.el")
 (load "web-ide.el")                     ; (find-file "web-ide.el")
 (load "yasnippet-config.el")            ; (find-file "yasnippet-config.el")
+
+(provide 'main-config)
+;;; main-config.el ends here

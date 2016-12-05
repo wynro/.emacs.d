@@ -1,3 +1,8 @@
+;;; theme-config.el --- Theme configuration
+;;; Commentary:
+;;;
+;;; Code:
+
 ;; Theme configurations
 
 ;; Available themes: aalto-dark, aalto-light, aliceblue, andreas,
@@ -20,6 +25,9 @@
 ;; subtle-hacker, taming-mr-arneson, taylor, tty-dark, vim-colors,
 ;; whateveryouwant, wheat, word-perfect, xemacs, xp
 
-(setq current-theme 'cobalt)
+(defvar current-theme 'cobalt)
 (load-theme current-theme t t)
 (enable-theme current-theme)
+
+(provide 'theme-config)
+;;; theme-config.el ends here

@@ -1,38 +1,32 @@
-;; Spellchecking in multiple languages
+ ;;; spellchecking.el --- Spellchecking configuration
+;;; Commentary:
+;;;
+;;; Code:
 
-;; Keybindings
-;; - C-M-z s e: activate spellchecking in english
-;; - C-M-z s s: activate spellchecking in spanish
-
-;; Spellchecking (in spanish) on the fly
+;; Spellchecking (in spanish)
 (defun flyspell-mode-es ()
-  "Activate Spanish spell checking using flyspell"
+  "Activate Spanish spell checking using flyspell."
   (interactive)
   (flyspell-mode)
   (ispell-change-dictionary "castellano")
   )
 
 (defun ispell-next-word ()
+  "Go to the next error."
   (interactive)
   (flyspell-goto-next-error)
   (ispell-word)
   )
 
-;; (defun flyspell-mode-off ()
-;;   (flyspell-mode)
-;;   )
-
 ;; Key bindings
+(defvar spellchecking-map)
 (define-prefix-command 'spellchecking-map)
-(global-set-key (kbd "C-M-z") 'spellchecking-map)
-(define-key spellchecking-map (kbd "s e") 'flyspell-mode)
-(define-key spellchecking-map (kbd "s s") 'flyspell-mode-es)
+(global-set-key (kbd "C-c s") 'spellchecking-map)
+(define-key spellchecking-map (kbd "e") 'flyspell-mode)
+(define-key spellchecking-map (kbd "s") 'flyspell-mode-es)
 (define-key spellchecking-map (kbd "b") 'flyspell-buffer)
-(define-key spellchecking-map (kbd "C-M-z") 'flyspell-goto-next-error)
-(define-key spellchecking-map (kbd "C-M-a") 'ispell-word)
-;; (define-key spellchecking-map (kbd "a") 'ispell-next-word)
+(define-key spellchecking-map (kbd "z") 'flyspell-goto-next-error)
+(define-key spellchecking-map (kbd "a") 'ispell-word)
 
-;; (define-key spellchecking-map (kbd "x") 'flyspell-mode-es)
-;; (global-set-key "C-M-x C-s C-e" 'flyspell-mode)
-;; (global-set-key "C-M-x C-s C-s" 'flyspell-es-mode)
-
+(provide 'spellchecking)
+;;; spellchecking.el ends here

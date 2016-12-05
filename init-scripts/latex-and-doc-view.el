@@ -1,4 +1,7 @@
-;; Configuration combined for LaTeX (AUCTeX) and latex-preview-pane
+;;; latex-and-doc-view.el --- Latex, auctex and l-p-p configuration
+;;; Commentary:
+;;;
+;;; Code:
 
 ;; AUCTeX
 ;;(add-to-list 'load-path (concat init-scripts "auctex/"))
@@ -16,18 +19,17 @@
 
 ;; latex-preview-pane
 ;; Manually load latex-preview-pane
+(defvar init-scripts)
 (add-to-list 'load-path (concat init-scripts "latex-preview-pane/"))
 (load "latex-preview-pane.el")
 
 ;; Compile command for latex-preview-pane
+(defvar pdf-latex-command)
 (setq pdf-latex-command "xelatex")
 
-;; Activate both normal latex-mode and latex-preview-pane
-(defun latex-preview-mode()
-  (latex-mode)
-  (latex-preview-pane-mode)
-  )
-
 ;; Select mode for each TeX file
-(add-to-list 'auto-mode-alist '("\\.tex\\'" . latex-preview-mode))
+(add-hook 'latex-mode-hook 'latex-preview-pane-mode)
 (add-to-list 'auto-mode-alist '("\\.sty\\'" . latex-mode))
+
+(provide 'latex-and-doc-view)
+;;; latex-and-doc-view.el ends here

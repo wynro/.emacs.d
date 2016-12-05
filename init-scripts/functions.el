@@ -1,5 +1,12 @@
+;;; functions.el --- Various functions
+;;; Commentary:
+;;;
+;;; Code:
+
 (defun asciify-text (&optional *begin *end)
-  "Change European language characters into equivalent ASCII ones, ⁖ “café” ⇒ “cafe”.
+  "Change European language characters into equivalent ASCII ones.
+In current buffer (from BEGIN to END)
+
 When called interactively, work on current line or text selection.
 
 URL `http://ergoemacs.org/emacs/emacs_zap_gremlins.html'
@@ -49,9 +56,8 @@ Version 2016-07-12"
          -charMap)))))
 
 (defun asciify-string (*string)
-  "Returns a new string. European language chars are changed ot ASCII ones ⁖ “café” ⇒ “cafe”.
-See `asciify-text'
-Version 2015-06-08"
+  "Change European language chars to ASCII in STRING.
+See `asciify-text'"
   (with-temp-buffer
     (insert *string)
     (asciify-text (point-min) (point-max))
@@ -72,3 +78,6 @@ Version 2015-06-08"
   "Delete duplicate lines in buffer and keep first occurrence."
   (interactive "*")
   (uniquify-all-lines-region (point-min) (point-max)))
+
+(provide 'functions)
+;;; functions.el ends here

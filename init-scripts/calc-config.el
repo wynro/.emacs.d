@@ -1,19 +1,22 @@
-;; Calc configuration file
+;;; calc-config.el --- Calc configuration
+;;; Commentary:
+;;;
+;;; Code:
 
-;; Changes to calc
-(setq calc-window-height 14)
-(setq calc-internal-prec 20)
-(setq calc-complex-format 'i)
-(setq calc-prefer-frac nil)
-;;; End of mode settings
+(defvar calc-window-height 14)
+(defvar calc-internal-prec 20)
+(defvar calc-complex-format 'i)
+(defvar calc-prefer-frac nil)
 
 (defun calc-open()
   (interactive)
   (calc-keypad)
   (other-window 2)
-  (kill-buffer)
   (delete-window)
   (other-window -1)
   )
 
-(global-set-key (kbd "C-x ç") 'calc-open)
+(global-set-key (kbd "C-x %") 'calc-open)
+
+(provide 'calc-config)
+;;; calc-config.el ends here

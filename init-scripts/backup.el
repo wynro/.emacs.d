@@ -1,4 +1,7 @@
-;; Multiple adjustments about how Emacs do the backup of files
+;;; backup.el --- Adjustments on how Emacs backups buffers and files
+;;; Commentary:
+;;;
+;;; Code:
 
 ;; Obtaining the backup path
 (defvar --backup-directory (concat user-emacs-directory "backups"))
@@ -22,3 +25,6 @@
  auto-save-timeout 30   ; number of seconds idle time before auto-save (default: 30)
  auto-save-interval 200 ; number of keystrokes between auto-saves (default: 300)
  )
+
+(provide 'backup)
+;;; backup.el ends here

@@ -1,25 +1,31 @@
-;; Commands related with MAKE system
+;;; make-config.el --- Make configuration
+;;; Commentary:
+;;;
+;;; Code:
 
 (defun make ()
-  "Calls the make command in the current directory"
+  "Call the make command in the current directory."
   (interactive)
   (shell-command "make")
-)
+  )
 
 (defun make-clean ()
-  "Calls the clear objective in the current dir make"
+  "Call the clear objective in the current directory."
   (interactive)
   (shell-command "make clean")
-)
+  )
 
 (defun make-go ()
-  "Calls the go objective in the current dir make"
+  "Call the go objective in the current directory."
   (interactive)
   (shell-command "make go")
-)
+  )
 
 (defun make-doxy ()
-  "Calls the go objective in the current dir make"
+  "Call the go objective in the current directory."
   (interactive)
   (shell-command "make doxy")
-)
+  )
+
+(provide 'make-config)
+;;; make-config.el ends here

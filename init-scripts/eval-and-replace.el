@@ -1,7 +1,8 @@
-;; Adition of a new command to replace a elisp expression
+;;; eval-and-replace.el --- Adition of a new command to replace a elisp expression
+;;; Commentary:
+;;;
+;;; Code:
 
-;; Inclusion of a new combination (C-x e), which evaluates and
-;; replaces the previous expression (in LISP type)
 (defun eval-and-replace ()
   "Replace the preceding sexp with its value."
   (interactive)
@@ -22,3 +23,5 @@
 ;; is the eval-last-sexp command
 (global-set-key (kbd "C-x e") 'eval-and-replace)
 
+(provide 'eval-and-replace)
+;;; eval-and-replace.el ends here

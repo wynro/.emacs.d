@@ -1,7 +1,12 @@
-;; ^False, copied from the college original file, will grow as needed
-
+;;; init.el --- Init loader
+;; Copyright (C) 2016 Guillermo Robles
+;; Author: Guillermo Robles
+;;; Commentary:
+;; Initial file of my configuration
+;;; Code:
+ 
 ;; (defvar gnus-local-organization "CPS Universidad de Zaragoza")
-(setq gnus-local-organization "Rank")
+(defvar gnus-local-organization "Rank")
 ;; (setq news-inews-program "/usr/local/etc/inews")
 
 ;; Enable automatic signature inclusion
@@ -19,7 +24,7 @@
 ;; http://stackoverflow.com/questions/10092322/how-to-automatically-install-emacs-packages-by-specifying-a-list-of-package-name
 (require 'package)
 ; list the packages you want
-(setq package-list '(auctex auto-yasnippet bash-completion circe clips-mode color-theme-modern common-lisp-snippets company csv-mode dockerfile-mode elnode emms erlang gnuplot haskell-mode iedit js2-mode lua-mode magit markdown-mode mc-extras multi-web-mode multiple-cursors nodejs-repl nyan-mode page-break-lines paredit php-mode projectile puppet-mode scala-mode smooth-scroll undo-tree web-server yaml-mode))
+(defvar package-list '(flycheck auctex auto-yasnippet bash-completion circe clips-mode color-theme-modern common-lisp-snippets company csv-mode dockerfile-mode elnode emms erlang gnuplot haskell-mode iedit js2-mode lua-mode magit markdown-mode mc-extras multi-web-mode multiple-cursors nodejs-repl nyan-mode page-break-lines paredit php-mode projectile puppet-mode scala-mode smooth-scroll undo-tree web-server yaml-mode))
 
 ; list the repositories containing them
 (setq package-archives '(("melpa-stable" . "https://stable.melpa.org/packages/")
@@ -28,7 +33,6 @@
 
 ; activate all the packages (in particular autoloads)
 (package-initialize)
-
 ; fetch the list of packages available
 (unless package-archive-contents
   (package-refresh-contents))
@@ -56,7 +60,7 @@
 
 (print (concat "Loading from " init-scripts))
 ;; Loading the main configuration file
-(load "main.el")
+(load "main-config.el")
 
 ;; Disable electric-indentation
 (when (fboundp 'electric-indent-mode) (electric-indent-mode -1))
@@ -65,7 +69,11 @@
 (setq vc-handled-backends (quote ()))
 
 ;; Pay respects to our God
-(defun press-f () (interactive) (print "You payed respects"))
+(defun press-f ()
+  "Pay respects."
+  (interactive)
+  (print "You payed respects")
+  )
 
 ;; Shell (Ideally Bash) binded to F5
 ;; Apparently, term is far better. We'll see
@@ -78,9 +86,9 @@
 (add-to-list 'auto-mode-alist '("\\.cc\\'" . c++-mode))
 
 ;; Changes
-(linum-mode)           ;; Show line numbers at the left of the file
-(column-number-mode)   ;; Show column number in the footer
-(show-paren-mode)      ;; Show line number in the footer
+(add-hook 'prog-mode-hook 'linum-mode) ;; Show line numbers at the left of the file
+(column-number-mode) ;; Show column number in the footer
+(show-paren-mode)    ;; Show line number in the footer
 
 (setq save-interprogram-paste-before-kill t)
 
@@ -94,3 +102,5 @@
 
 ;; Testing stuff
 (print "Config loaded")
+(provide 'init)
+;;; init.el ends here
