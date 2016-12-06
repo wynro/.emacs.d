@@ -8,7 +8,7 @@
 
 (defvar hc-other-chars '("."))
 
-(add-hook 'cobol-mode-hook '(laxmbda ()
+(add-hook 'cobol-mode-hook '(lambda ()
                               (whitespace-mode)
                               (hc-toggle-highlight-other-chars)
                               (column-marker-1 6)
