@@ -44,3 +44,6 @@ elpa/
 
 # Ignore recent files list
 recentf
+
+# Ignore Achievement info
+.achievements
