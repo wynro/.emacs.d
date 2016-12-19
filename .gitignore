@@ -47,3 +47,6 @@ recentf
 
 # Ignore Achievement info
 .achievements
+
+# Ignore eshell files
+eshell/
