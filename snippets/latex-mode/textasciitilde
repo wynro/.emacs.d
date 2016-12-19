@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: textasciitilde
+# key: ~
+# --
+\textasciitilde$0
