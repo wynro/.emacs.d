@@ -28,7 +28,7 @@
 (setq pdf-latex-command "xelatex")
 
 ;; Select mode for each TeX file
-(add-hook 'latex-mode-hook 'latex-preview-pane-mode)
+;;(add-hook 'latex-mode-hook 'latex-preview-pane-mode)
 (add-to-list 'auto-mode-alist '("\\.sty\\'" . latex-mode))
 
 (provide 'latex-and-doc-view)
