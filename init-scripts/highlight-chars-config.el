@@ -8,7 +8,6 @@
 (load "highlight-chars.el")
 
 (add-hook 'prog-mode-hook 'hc-toggle-highlight-trailing-whitespace)
-(add-hook 'text-mode-hook 'hc-toggle-highlight-trailing-whitespace)
 
 (provide 'highlight-chars-config)
 ;;; highlight-chars-config.el ends here
