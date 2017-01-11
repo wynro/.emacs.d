@@ -2,7 +2,7 @@
 # name: header
 # key: header
 # --
-#!/usr/sbin/env python
+#!/usr/bin/env python
 """
 ${1:description}
 
