@@ -19,7 +19,6 @@
 (load "evil-config.el")                 ; (find-file "evil-config.el")
 ;; (load "google-translate-config.el")     ; (find-file "google-translate-config.el")
 (load "functions.el")                   ; (find-file "functions.el")
-(load "graphviz-dot-mode-config.el")           ; (find-file "graphviz-dot-mode.el")
 (load "highlight-chars-config.el")      ; (find-file "highlight-chars-config.el")
 (load "init-config.el")                 ; (find-file "init-config.el")
 (load "isearch.el")                     ; (find-file "isearch.el")
