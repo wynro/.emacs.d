@@ -88,7 +88,6 @@
 
 ;; Changes
 (add-hook 'prog-mode-hook 'linum-mode) ;; Show line numbers at the left of the file
-(add-hook 'prog-mode-hook 'minimap-mode) ;; Show minimap at the left of the file of the file
 (column-number-mode) ;; Show column number in the footer
 (show-paren-mode)    ;; Show line number in the footer
 
