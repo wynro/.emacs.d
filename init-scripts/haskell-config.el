@@ -14,5 +14,5 @@
 ;;(add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
 
-(provide 'hasl-config)
+(provide 'haskell-config)
 ;;; haskell-config.el ends here

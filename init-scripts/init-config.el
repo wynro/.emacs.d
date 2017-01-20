@@ -1,4 +1,7 @@
-;; defuns to work with the init file
+;;; init-config.el --- Defuns to work with the init file
+;;; Commentary:
+;;; Just a bunch of random functions
+;;; Code:
 
 ;; Open init file
 (defun init-file()
@@ -18,3 +21,5 @@
   (find-file (concat init-emacs.d "init-scripts/main.el"))
   )
 
+(provide 'init-config)
+;;; init-config.el ends here
