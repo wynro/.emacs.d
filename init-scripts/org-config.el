@@ -3,6 +3,7 @@
 ;;;
 ;;; Code:
 
+(require 'org)
 ;; Experiments with org-mode, mainly keybindings
 ;; C-c a for agenda
 (global-set-key (kbd "C-c a") 'org-agenda)
