@@ -59,7 +59,7 @@
 
 ;; The damn tabs
 (setq-default indent-tabs-mode t)
-(setq backward-delete-char-untabify-method 'all)
+(setq backward-delete-char-untabify-method 'hungry)
 
 (print (concat "Loading from " init-scripts))
 ;; Loading the main configuration file
