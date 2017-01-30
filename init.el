@@ -58,7 +58,8 @@
 ;;(setq coding-system-for-write 'utf-8)
 
 ;; The damn tabs
-(setq-default indent-tabs-mode nil)
+(setq-default indent-tabs-mode t)
+(setq backward-delete-char-untabify-method 'all)
 
 (print (concat "Loading from " init-scripts))
 ;; Loading the main configuration file
