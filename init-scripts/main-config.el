@@ -13,7 +13,7 @@
 (require 'column-marker-config)        ; (find-file "column-marker-config.el")
 ;; (require 'dashboard-config)            ; (find-file "emacs-dashboard-config.el")
 (require 'flycheck-config)             ; (find-file "flycheck-config.el")
-(require 'go-config)		       ; (find-file "go-config.el")
+(require 'go-config)		               ; (find-file "go-config.el")
 (require 'haskell-config)              ; (find-file "haskell-config.el")
 (require 'emms-config)                 ; (find-file "emms-config.el")
 (require 'eval-and-replace)            ; (find-file "eval-and-replace.el")
