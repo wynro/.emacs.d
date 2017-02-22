@@ -3,7 +3,7 @@
 ;; File that loads all the necessary files in the directory
 
 ;;; Code:
-(require 'achievements-config)         ; (find-file "achievements-config.el")
+;; (require 'achievements-config)         ; (find-file "achievements-config.el")
 (require 'backup)                      ; (find-file "backup.el")
 (require 'buffer-defuns)               ; (find-file "buffer-defuns.el")
 (require 'calc-config)                 ; (find-file "calc-config.el")
@@ -13,6 +13,7 @@
 (require 'column-marker-config)        ; (find-file "column-marker-config.el")
 ;; (require 'dashboard-config)            ; (find-file "emacs-dashboard-config.el")
 (require 'flycheck-config)             ; (find-file "flycheck-config.el")
+(require 'go-config)		       ; (find-file "go-config.el")
 (require 'haskell-config)              ; (find-file "haskell-config.el")
 (require 'emms-config)                 ; (find-file "emms-config.el")
 (require 'eval-and-replace)            ; (find-file "eval-and-replace.el")
