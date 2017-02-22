@@ -25,7 +25,7 @@
 ;; subtle-hacker, taming-mr-arneson, taylor, tty-dark, vim-colors,
 ;; whateveryouwant, wheat, word-perfect, xemacs, xp
 
-(defvar current-theme 'cobalt)
+(defvar current-theme 'hober)
 (load-theme current-theme t t)
 (enable-theme current-theme)
 
