@@ -10,6 +10,7 @@
 
 (global-set-key (kbd "C-'") 'emms-playlist-mode-go)
 (global-set-key (kbd "C-\"") 'emms-add-directory)
+(global-set-key (kbd "C-M-\"") 'emms-add-file)
 
 (global-set-key [C-XF86AudioPlay] 'emms-pause)
 (global-set-key [C-XF86AudioStop] 'emms-stop)
