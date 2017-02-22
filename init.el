@@ -93,6 +93,7 @@
 (column-number-mode) ;; Show column number in the footer
 (show-paren-mode)    ;; Show line number in the footer
 
+(menu-bar-mode -1)
 (setq save-interprogram-paste-before-kill t)
 
 (setq custom-file (concat init-emacs.d "custom.el"))
