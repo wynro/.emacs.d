@@ -25,7 +25,7 @@
 
 ;; Compile command for latex-preview-pane
 (defvar pdf-latex-command)
-(setq pdf-latex-command "xelatex")
+(setq pdf-latex-command "/usr/texbin/xelatex")
 
 ;; Select mode for each TeX file
 ;;(add-hook 'latex-mode-hook 'latex-preview-pane-mode)
