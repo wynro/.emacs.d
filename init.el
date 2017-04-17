@@ -99,6 +99,8 @@
 (setq custom-file (concat init-emacs.d "custom.el"))
 (load custom-file)
 
+(setq-default indent-tabs-mode nil)
+
 ;; Enable some buff commands
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
