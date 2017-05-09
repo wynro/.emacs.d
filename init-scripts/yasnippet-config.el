@@ -78,6 +78,9 @@
 (define-key company-active-map [tab] 'expand-snippet-or-complete-selection)
 (define-key company-active-map (kbd "TAB") 'expand-snippet-or-complete-selection)
 
+(add-hook 'magit-status-mode-hook
+          (lambda() (local-set-key [tab] #'magit-section-toggle)))
+
 (define-key yas-minor-mode-map [tab] nil)
 (define-key yas-minor-mode-map (kbd "TAB") nil)
 
