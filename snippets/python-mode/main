@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: main
 # key: main
+# expand-env: ((yas-indent-line 'fixed))
 # --
 def main():
     $0
