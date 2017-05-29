@@ -67,6 +67,7 @@
 
 ;; Disable electric-indentation
 (when (fboundp 'electric-indent-mode) (electric-indent-mode -1))
+(electric-pair-mode 1)
 
 ;; Disable git backend to speed up sshfs file load among other things
 (setq vc-handled-backends (quote ()))
