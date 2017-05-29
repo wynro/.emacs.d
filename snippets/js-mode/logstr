@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+#name : logStr
+#key: logstr
+# --
+console.log(JSON.stringify($1));$0
