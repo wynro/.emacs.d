@@ -30,7 +30,6 @@
 ;; (require 'main)                     ; Unnecesary/infinite loop
 (require 'make-config)                 ; (find-file "make-config.el")
 (require 'mc-config)                   ; (find-file "mc-config.el")
-(require 'minimap-config)              ; (find-file "minimap-config.el")
 ;; (require 'multi-web-mode)           ; Loaded by mweb-config.el
 (require 'mweb-config)                 ; (find-file "mweb-config.el")
 (require 'org-config)                  ; (find-file "org-config.el")
