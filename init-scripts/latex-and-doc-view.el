@@ -31,5 +31,31 @@
 ;;(add-hook 'latex-mode-hook 'latex-preview-pane-mode)
 (add-to-list 'auto-mode-alist '("\\.sty\\'" . latex-mode))
 
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; for AUCTeX LaTeX mode
+(add-hook 'latex-mode-hook 'turn-on-reftex)   ; for Emacs latex mode
+
+(require 'reftex)
+(setq reftex-plug-into-AUCTeX t)
+
+(eval-after-load "latex"
+  '(progn
+     (add-to-list
+      'reftex-ref-style-alist
+      '("Default" t
+    (("LABEL ONLY" ?\s))))
+
+     ;; Advice reftex-format-special-labely-only to substitute the
+     ;; insertion of ~{<label>} to <label> only
+     (defadvice reftex-format-special (around reftex-format-special-labely-only activate)
+       "Advice `reftex-format-special' such that if
+REFSTYLE is \"LABEL ONLY\" it will insert
+only the reference's label."
+       (if (string= (ad-get-arg 2) "LABEL ONLY")
+       (setq ad-return-value (format "%s" (ad-get-arg 0)))
+     ad-do-it))))
+
+;; Prevent reftex query (Only label insertion)
+(setq reftex-ref-macro-prompt nil)
+
 (provide 'latex-and-doc-view)
 ;;; latex-and-doc-view.el ends here
