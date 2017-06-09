@@ -79,10 +79,6 @@
   (print "You payed respects")
   )
 
-;; Shell (Ideally Bash) binded to F5
-;; Apparently, term is far better. We'll see
-(global-set-key [f5] 'shell)
-
 ;; Use the correct mode in every filetype (If this goes bigger than 3
 ;; or 4, move to his own file)
 (add-to-list 'auto-mode-alist '("\\.plx\\'" . perl-mode))

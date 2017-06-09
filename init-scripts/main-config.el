@@ -33,6 +33,7 @@
 ;; (require 'multi-web-mode)           ; Loaded by mweb-config.el
 (require 'mweb-config)                 ; (find-file "mweb-config.el")
 (require 'org-config)                  ; (find-file "org-config.el")
+(require 'shell-config)                ; (find-file "shell-config.el")
 (require 'smooth-scrolling)            ; (find-file "smooth-scrolling.el")
 (require 'spellchecking)               ; (find-file "spellchecking.el")
 (require 'tetris-config)               ; (find-file "tetris-config.el")
