@@ -10,15 +10,17 @@
 
 (defun check-expansion ()
   "."
+  (interactive)
   (save-excursion
     (if (looking-at "\\_>") t
       (backward-char 1)
       (if (looking-at "\\.") t
-    (backward-char 1)
-    (if (looking-at "->") t nil)))))
+        (backward-char 1)
+        (if (looking-at "->") t nil)))))
 
 (defun do-yas-expand ()
   "."
+  (interactive)
   (let ((yas-fallback-behavior 'return-nil))
     (yas-expand)))
 
@@ -29,39 +31,46 @@
    ((minibufferp)
     (minibuffer-complete))
    (t
-    (indent-for-tab-command)
-    (if (or (not yas-minor-mode)
-        (null (do-yas-expand)))
-    (if (check-expansion)
-        (progn
-          (company-manual-begin)
-          (if (null company-candidates)
-          (progn
-            (company-abort)
-            (indent-for-tab-command)))))))))
+    (if (and
+         (not (eq major-mode 'nroff-mode))
+         (not (eq major-mode 'markdown-mode))
+         )
+                                        ;TODO: Add more weird modes
+        (indent-for-tab-command)
+      )
+
+    (if (or (not (yas-minor-mode))
+            (null (do-yas-expand)))
+        (if (check-expansion)
+            (progn
+              (company-manual-begin)
+              (if (null company-candidates)
+                  (progn
+                    (company-abort)
+                    (indent-for-tab-command)))))))))
 
 (defun tab-complete-or-next-field ()
   "."
   (interactive)
   (if (or (not yas-minor-mode)
-      (null (do-yas-expand)))
+          (null (do-yas-expand)))
       (if company-candidates
-      (company-complete-selection)
-    (if (check-expansion)
-      (progn
-        (company-manual-begin)
-        (if (null company-candidates)
-        (progn
-          (company-abort)
-          (yas-next-field))))
-      (yas-next-field)))))
+          (company-complete-selection)
+        (if (check-expansion)
+            (progn
+              (company-manual-begin)
+              (if (null company-candidates)
+                  (progn
+                    (company-abort)
+                    (yas-next-field))))
+          (yas-next-field)))))
 
 (defun expand-snippet-or-complete-selection ()
   "."
   (interactive)
   (if (or (not yas-minor-mode)
-      (null (do-yas-expand))
-      (company-abort))
+          (null (do-yas-expand))
+          (company-abort))
       (company-complete-selection)))
 
 (defun abort-company-or-yas ()
