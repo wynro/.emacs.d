@@ -9,8 +9,12 @@
 
 (add-hook 'term-mode-hook
           (lambda ()
-            (hc-toggle-highlight-trailing-whitespace)
-            ))
+            (interactive)
+            (if (bound-and-true-p hc-highlight-trailing-whitespace-p)
+                (hc-toggle-highlight-trailing-whitespace)
+              )
+            )
+          )
 
 (provide 'shell-config)
 ;;; shell-config.el ends here
