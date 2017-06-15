@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: color
+# key: color
+# --
+\textcolor{${1:declared-color}}{${2:text}}$0
