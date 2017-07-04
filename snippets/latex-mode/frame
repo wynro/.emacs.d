@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: frame
+# key: frame
+# Beamer frame
+# --
+\begin{frame}{${1:title}}
+$0
+\note{
+${2:Notas}
+}
+\end{frame}

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: end
+# key: end
+# --
+\end{${1:environment}}$0
