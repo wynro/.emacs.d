@@ -25,7 +25,7 @@
 (define-key spellchecking-map (kbd "e") 'flyspell-mode)
 (define-key spellchecking-map (kbd "s") 'flyspell-mode-es)
 (define-key spellchecking-map (kbd "b") 'flyspell-buffer)
-(define-key spellchecking-map (kbd "z") 'flyspell-goto-next-error)
+(define-key spellchecking-map (kbd "z") 'ispell-next-word)
 (define-key spellchecking-map (kbd "a") 'ispell-word)
 
 (provide 'spellchecking)
