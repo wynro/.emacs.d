@@ -23,7 +23,6 @@
 (require 'functions)                   ; (find-file "functions.el")
 (require 'highlight-chars-config)      ; (find-file "highlight-chars-config.el")
 (require 'init-config)                 ; (find-file "init-config.el")
-(require 'isearch)                     ; (find-file "isearch.el")
 (require 'ipcalc-config)               ; (find-file "ipcalc-config.el")
 (require 'jdee-config)                 ; (find-file "jdee-config.el")
 (require 'latex-and-doc-view)          ; (find-file "latex-and-doc-view.el")
