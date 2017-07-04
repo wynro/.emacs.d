@@ -5,6 +5,7 @@
 ;;; Code:
 ;; (require 'achievements-config)         ; (find-file "achievements-config.el")
 (require 'backup)                      ; (find-file "backup.el")
+(require 'better-defaults)             ; (find-file "better-defaults.el")
 (require 'buffer-defuns)               ; (find-file "buffer-defuns.el")
 (require 'calc-config)                 ; (find-file "calc-config.el")
 (require 'c-config)                    ; (find-file "c-config.el")
