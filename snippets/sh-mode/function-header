@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: function-header
+# key: fh
+# --
+# ${1:description}
+#
+# \$1: ${2:first argument}${3:
+# \$2: ${4:second argument}${5:
+# \$3: ${6:third argument}}}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: elif
+# key: elif
+# --
+elif ${1:[ -f file ]}
+then
+    ${2:stuff}
+fi
+$0

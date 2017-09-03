@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: ife
+# key: ife
+# --
+if ${1:[ -f file ]}
+then
+    ${2:stuff}
+elif ${3:[ -f file ]}
+then
+    ${4:stuff}
+fi
+$0
