@@ -2,6 +2,11 @@
 # name: function
 # key: f
 # --
-${1:name} () {
+# ${1:description}
+#
+# \$1: ${2:first argument}${3:
+# \$2: ${4:second argument}${5:
+# \$3: ${6:third argument}}}
+${7:name} () {
          $0
 }
