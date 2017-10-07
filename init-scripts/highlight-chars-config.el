@@ -9,5 +9,12 @@
 
 (add-hook 'prog-mode-hook 'hc-toggle-highlight-trailing-whitespace)
 
+
+(global-hl-line-mode)                   ; Activate hl-line everywhere
+
+(set-face-background 'highlight "#222") ; Add a light grey as background
+(set-face-foreground 'highlight nil)    ; No foreground
+(set-face-underline  'highlight nil)    ; No underline
+
 (provide 'highlight-chars-config)
 ;;; highlight-chars-config.el ends here
