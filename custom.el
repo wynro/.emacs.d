@@ -8,6 +8,9 @@
     ("5eb4b22e97ddb2db9ecce7d983fa45eb8367447f151c7e1b033af27820f43760" default)))
  '(haskell-mode-hook (quote (turn-on-haskell-indent)) t)
  '(inhibit-startup-screen t)
+ '(initial-major-mode (quote org-mode))
+ '(initial-scratch-message "# Scratch
+")
  '(magit-branch-arguments nil)
  '(magit-commit-arguments nil)
  '(package-selected-packages
