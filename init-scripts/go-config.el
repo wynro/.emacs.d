@@ -5,7 +5,7 @@
 
 (require 'go-mode)
 (require 'go-guru)
-(require 'exec-path-from-shell)
+;; (require 'exec-path-from-shell)
 
 ;; (defun set-exec-path-from-shell-PATH ()
 ;;   "Set the exec PATH as defined in the shell."
