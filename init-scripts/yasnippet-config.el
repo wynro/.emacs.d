@@ -35,6 +35,7 @@
          (not (eq major-mode 'nroff-mode))
          (not (eq major-mode 'markdown-mode))
          (not (eq major-mode 'bibtex-mode))
+         (not (eq major-mode 'puppet-mode))
          )
                                         ;TODO: Add more weird modes
         (indent-for-tab-command)
