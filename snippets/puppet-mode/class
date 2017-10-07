@@ -1,6 +1,0 @@
-# name: class { ... }
-# key: class
-# --
-class ${1:name} inherits ${2:parent} {
-  $0
-}
