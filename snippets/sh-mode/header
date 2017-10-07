@@ -7,7 +7,7 @@
 #
 # ${3:description}
 
-${4:set -e                          # Exit if pipeline returns non zero
+${4:set -e                          # Exit in case of errors (prevent error snowballing)
 }${5:set -u                          # Errors on unset variables usage
 }${6:set -o pipefail                 # The return value of pipeline is the return value of the rightmost command to exit with a non-zero, or zero if all commands exit succesfully
 }${7:
