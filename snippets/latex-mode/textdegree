@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: textdegree
+# key: dg
+# --
+\$^{\circ}\$$0
