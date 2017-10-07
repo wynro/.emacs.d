@@ -20,11 +20,17 @@
 
 ;; Aditions, if something start to fail, look here
 
+(defvar init-emacs.d (concat (expand-file-name "~") "/.emacs.d/"))
+
+;; Add customs file
+(setq custom-file (concat init-emacs.d "custom.el"))
+(load custom-file)
+
 ;; Repositories
 ;; http://stackoverflow.com/questions/10092322/how-to-automatically-install-emacs-packages-by-specifying-a-list-of-package-name
 (require 'package)
-; list the packages you want
-(defvar package-list '(suggest go-guru go-autocomplete go-mode powershell systemd org forth-mode tf2-conf-mode csgo-conf-mode package-lint achievements flycheck auctex auto-yasnippet bash-completion clips-mode color-theme-modern common-lisp-snippets company csv-mode dockerfile-mode elnode emms erlang gnuplot haskell-mode iedit js2-mode lua-mode magit markdown-mode mc-extras multi-web-mode multiple-cursors nodejs-repl nyan-mode page-break-lines paredit php-mode projectile puppet-mode scala-mode smooth-scroll undo-tree web-server yaml-mode))
+
+;; The desired packages are listed in custom.el, in the variable package-selected-packages
 
 ; list the repositories containing them
 (setq package-archives '(("org" . "http://orgmode.org/elpa/")
@@ -40,7 +46,7 @@
   (package-refresh-contents))
 
 ; install the missing packages
-(dolist (package package-list)
+(dolist (package package-selected-packages)
   (unless (package-installed-p package)
     (package-install package)))
 
@@ -48,7 +54,6 @@
 (setq package-check-signature nil)
 
 ;; Expanding the load-path
-(defvar init-emacs.d (concat (expand-file-name "~") "/.emacs.d/"))
 (defvar init-scripts (concat init-emacs.d "init-scripts/"))
 (add-to-list 'load-path  init-scripts)
 
@@ -94,9 +99,6 @@
 (tool-bar-mode -1)
 
 (setq save-interprogram-paste-before-kill t)
-
-(setq custom-file (concat init-emacs.d "custom.el"))
-(load custom-file)
 
 (setq-default indent-tabs-mode nil)
 
