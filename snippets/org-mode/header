@@ -1,5 +1,9 @@
 # -*- mode: snippet -*-
-# name: mode
-# key: mode
+# name: header
+# key: header
 # --
 # -*- mode: org -*-
+#${1:
+#+STARTUP: showeverything}
+
+$0
