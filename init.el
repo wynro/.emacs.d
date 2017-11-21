@@ -95,8 +95,9 @@
 (column-number-mode) ;; Show column number in the footer
 (show-paren-mode)    ;; Show line number in the footer
 
-(menu-bar-mode 1)
-(tool-bar-mode -1)
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(if (fboundp 'menu-bar-mode) (menu-bar-mode 1))
 
 (setq save-interprogram-paste-before-kill t)
 
