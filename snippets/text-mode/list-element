@@ -1,7 +1,0 @@
-# -*- mode: snippet; require-final-newline: nil -*-
-# name: list-element
-# key: -(
-# binding: direct-keybinding
-# --
-- $1 ($2)
-$0

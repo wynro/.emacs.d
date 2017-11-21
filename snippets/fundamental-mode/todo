@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: todo
+# key: todo
+# --
+TODO (`(concat (format-time-string "%Y-%m-%d") " " (replace-regexp-in-string ":[0-9][0-9]$" "" (format-time-string "%T")))`): $0

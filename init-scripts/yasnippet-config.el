@@ -100,5 +100,10 @@
 (define-key yas-keymap [(control tab)] 'yas-next-field)
 (define-key yas-keymap (kbd "C-g") 'abort-company-or-yas)
 
+;; https://github.com/joaotavora/yasnippet/issues/557
+(add-hook 'yas-minor-mode-hook
+          (lambda ()
+            (yas-activate-extra-mode 'fundamental-mode)))
+
 (provide 'yasnippet-config)
 ;;; yasnippet-config.el ends here
