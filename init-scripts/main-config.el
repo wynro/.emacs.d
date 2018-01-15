@@ -4,6 +4,7 @@
 
 ;;; Code:
 (require 'achievements-config)         ; (find-file "achievements-config.el")
+(require 'ansible-config)              ; (find-file "ansible-config.el")
 (require 'backup)                      ; (find-file "backup.el")
 (require 'better-defaults)             ; (find-file "better-defaults.el")
 (require 'buffer-defuns)               ; (find-file "buffer-defuns.el")
