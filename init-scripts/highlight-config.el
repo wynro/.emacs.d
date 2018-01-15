@@ -1,4 +1,4 @@
-;;; highlight-configm.el --- Highlight configuration
+;;; highlight-config.el --- Highlight configuration
 ;;; Commentary:
 ;;;
 ;;; Code:
@@ -10,4 +10,4 @@
 )
 
 (provide 'highlight-config)
-;;; mhighlight-configm.el ends here
+;;; highlight-config.el ends here
