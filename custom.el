@@ -15,7 +15,7 @@
  '(magit-commit-arguments nil)
  '(package-selected-packages
    (quote
-    (dokuwiki-mode suggest go-guru go-autocomplete go-mode powershell systemd org graphviz-dot-mode forth-mode tf2-conf-mode csgo-conf-mode package-lint achievements flycheck auctex auto-yasnippet bash-completion clips-mode color-theme-modern common-lisp-snippets company csv-mode dockerfile-mode elnode emms erlang gnuplot haskell-mode iedit js2-mode lua-mode magit markdown-mode mc-extras multi-web-mode multiple-cursors nodejs-repl nyan-mode page-break-lines paredit php-mode projectile puppet-mode scala-mode smooth-scroll undo-tree web-server yaml-mode)))
+    (company-statistics company-ansible ansible-vault ansible-doc smartparens discover typing evil ipcalc column-marker cobol-mode dokuwiki-mode suggest go-guru go-autocomplete go-mode powershell systemd org graphviz-dot-mode forth-mode tf2-conf-mode csgo-conf-mode package-lint achievements flycheck auctex auto-yasnippet bash-completion clips-mode color-theme-modern common-lisp-snippets company csv-mode dockerfile-mode elnode erlang gnuplot haskell-mode iedit js2-mode lua-mode magit markdown-mode mc-extras multi-web-mode multiple-cursors nodejs-repl page-break-lines php-mode projectile puppet-mode scala-mode undo-tree web-server yaml-mode)))
  '(safe-local-variable-values (quote ((TeX-master . auto))))
  '(send-mail-function (quote mailclient-send-it))
  '(use-minimal-error-page (quote on))
