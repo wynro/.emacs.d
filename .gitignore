@@ -50,3 +50,15 @@ recentf
 
 # Ignore eshell files
 eshell/
+
+# Ignore company-statistics-cache
+company-statistics-cache.el
+
+# Ignore ido cache
+ido.last
+
+# Ignore type-break cache
+type-break
+
+# Ignore projectile bookmarks
+projectile-bookmarks.eld
