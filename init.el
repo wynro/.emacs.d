@@ -117,12 +117,14 @@
 (put 'narrow-to-region 'disabled nil)
 (put 'scroll-left 'disabled nil)
 
-(when window-system
-  (require 'hl-line)
-  (global-hl-line-mode)                   ; Activate hl-line everywhere
+(use-package hl-line
+  :ensure t
+  :if window-system
+  :config
   (set-face-background 'highlight "#444") ; Add a light grey as background
   (set-face-foreground 'highlight nil)    ; No foreground
-  )
+  (global-hl-line-mode)                   ; Activate hl-line everywhere
+)
 
 ;; Testing stuff
 (print "Config loaded")
