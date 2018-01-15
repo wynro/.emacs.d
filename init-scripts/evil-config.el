@@ -3,8 +3,10 @@
 ;;;
 ;;; Code:
 
-;; (require 'evil)
-;; (evil-mode 0)
+(use-package evil
+  :ensure t
+  :config (evil-mode 0)
+  )
 
 (provide 'evil-config)
 ;;; evil-config.el ends here
