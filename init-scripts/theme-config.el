@@ -25,9 +25,11 @@
 ;; subtle-hacker, taming-mr-arneson, taylor, tty-dark, vim-colors,
 ;; whateveryouwant, wheat, word-perfect, xemacs, xp
 
-(defvar current-theme 'hober)
-(load-theme current-theme t t)
-(enable-theme current-theme)
+(use-package color-theme-modern
+  :ensure t
+  :init (defvar current-theme 'hober)
+  :config (load-theme current-theme t)
+)
 
 (provide 'theme-config)
 ;;; theme-config.el ends here
