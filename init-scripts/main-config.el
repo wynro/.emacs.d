@@ -3,6 +3,7 @@
 ;; File that loads all the necessary files in the directory
 
 ;;; Code:
+(require 'ace-jump-mode-config)        ; (find-file "emacs-ace-jump-mode-config.el")
 (require 'achievements-config)         ; (find-file "achievements-config.el")
 (require 'ansible-config)              ; (find-file "ansible-config.el")
 (require 'backup)                      ; (find-file "backup.el")
