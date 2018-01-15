@@ -1,10 +1,14 @@
-;; DocView configurations
+;;; doc-view-config.el --- Configration of doc-view
+;;; Commentary:
+;;;
+;;; Code:
+
 ;; (define-key doc-view-mode-map "g" (doc-view-revert-buffer 1 1))
 
-(defun doc-view-my-keys()
-  "Modify keymaps used by `doc-view-mode'."
-  (local-set-key (kbd "C-g") (doc-view-revert-buffer 1 1))
+(use-package doc-view
+  :ensure t
   )
 
-;; Load my keybindings
-(add-hook 'doc-view-mode-hook 'doc-view-my-keys)
+(provide 'doc-view-config)
+;;; doc-view-config.el ends here
+
