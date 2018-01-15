@@ -3,28 +3,30 @@
 ;;; 
 ;;; Code:
 
-(emms-all)
-(emms-default-players)
-(defvar emms-source-file-default-directory)
-(setq emms-source-file-default-directory "~/Music/")
-
-(global-set-key (kbd "C-'") 'emms-playlist-mode-go)
-(global-set-key (kbd "C-\"") 'emms-add-directory)
-(global-set-key (kbd "C-M-\"") 'emms-add-file)
-
-(global-set-key [C-XF86AudioPlay] 'emms-pause)
-(global-set-key [C-XF86AudioStop] 'emms-stop)
-(global-set-key [C-XF86AudioNext] 'emms-next)
-(global-set-key [C-XF86AudioPrev] 'emms-previous)
-
-(defun nop ()
-  "Does nothing."
-  (interactive)
+(use-package emms
+  :ensure t
+  :defines
+  emms-source-file-default-directory
+  :config
+  (emms-all)
+  (emms-default-players)
+  (setq emms-source-file-default-directory "~/Music/")
+  :bind (
+         ("C-'" . emms-playlist-mode-go)
+         ("C-\"" . emms-add-directory)
+         ("C-M-\"" . emms-add-file)
+         ([C-XF86AudioPlay] . emms-pause)
+         ([C-XF86AudioStop] . emms-stop)
+         ([C-XF86AudioNext] . emms-next)
+         ([C-XF86AudioPrev] . emms-previous)
+         ;; This is a terrible hack, but apparently Emacs interprets
+         ;; Control+Fn as [C-XF86WakeUp], so I've added this to
+         ;; silence the messages of not bounded
+         ([C-XF86WakeUp] . nil)
+         )
   )
-;; This is a terrible hack, but apparently Emacs interprets Control+Fn
-;; as [C-XF86WakeUp], so I add this to silence the messages of not
-;; bounded
-(global-set-key [C-XF86WakeUp] 'nop)
+
+
 
 (provide 'emms-config)
 ;;; emms-config.el ends here
