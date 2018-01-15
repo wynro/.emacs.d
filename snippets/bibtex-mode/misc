@@ -10,6 +10,4 @@
     month        = {${7:month}},}
     year         = {${8:year}},
     note         = {Accesed: `(format-time-string "%Y/%m/%d")`$9}
-}
-
-$0
+}$0
