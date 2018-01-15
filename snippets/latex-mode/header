@@ -72,7 +72,7 @@
 \cfoot{\thepage/\pageref*{LastPage}}
 
 % Graphics importing configuration
-\graphicspath{{images/}{/home/guillermo/latex/images/}}
+\graphicspath{{images/}{/home/guillermo/texmf/images/}}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
 % Create index (can be comented to speed up a little compilation)
