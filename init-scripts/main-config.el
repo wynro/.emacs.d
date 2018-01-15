@@ -35,6 +35,7 @@
 (require 'mweb-config)                 ; (find-file "mweb-config.el")
 (require 'org-config)                  ; (find-file "org-config.el")
 (require 'shell-config)                ; (find-file "shell-config.el")
+(require 'smartparens)                 ; (find-file "smartparens.el")
 (require 'smooth-scrolling-config)     ; (find-file "smooth-scrolling-config.el")
 (require 'spellchecking)               ; (find-file "spellchecking.el")
 (require 'tetris-config)               ; (find-file "tetris-config.el")
