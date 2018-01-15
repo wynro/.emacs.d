@@ -92,13 +92,6 @@
 ;; Disable git backend to speed up sshfs file load among other things
 (setq vc-handled-backends (quote ()))
 
-;; Pay respects to our God
-(defun press-f ()
-  "Pay respects."
-  (interactive)
-  (print "You payed respects")
-  )
-
 ;; Use the correct mode in every filetype (If this goes bigger than 3
 ;; or 4, move to his own file)
 (add-to-list 'auto-mode-alist '("\\.plx\\'" . perl-mode))
