@@ -22,7 +22,7 @@
 (require 'evil-config)                 ; (find-file "evil-config.el")
 ;; (require 'google-translate-config)     ; (find-file "google-translate-config.el")
 (require 'functions)                   ; (find-file "functions.el")
-(require 'highlight-chars-config)      ; (find-file "highlight-chars-config.el")
+(require 'highlight-config)            ; (find-file "highlight-config.el")
 (require 'init-config)                 ; (find-file "init-config.el")
 (require 'input-method)                ; (find-file "input-method.el")
 (require 'ipcalc-config)               ; (find-file "ipcalc-config.el")
