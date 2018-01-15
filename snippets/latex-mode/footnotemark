@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: footnotemark
+# key: fnm
+# --
+\footnotemark \footnotetext{$1}$0

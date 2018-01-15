@@ -2,4 +2,4 @@
 # name: footnote
 # key: fn
 # --
-\footnotemark \footnotetext{$1}$0
+\footnote{$1}$0
