@@ -3,8 +3,10 @@
 ;;;
 ;;; Code:
 
-(require 'achievements)
-(achievements-mode)
+(use-package achievements
+  :ensure t
+  :config (achievements-mode)
+)
 
 (provide 'achievements-config)
 ;;; achievements-config.el ends here
