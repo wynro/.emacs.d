@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: chapter
+# key: cha
+# --
+\chapter{${1:name}}
+\label{cha:(replace-regexp-in-string " " "-"
+                                     (replace-regexp-in-string "á" "a"
+                                     (replace-regexp-in-string "é" "e"
+                                     (replace-regexp-in-string "í" "i"
+                                     (replace-regexp-in-string "ó" "o"
+                                     (replace-regexp-in-string "ú" "u"
+                                     (replace-regexp-in-string "ñ" "n"
+                                     (replace-regexp-in-string "/" "-" (downcase "$1")))))))))}
+
+$0
