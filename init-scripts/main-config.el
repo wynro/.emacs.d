@@ -12,7 +12,6 @@
 (require 'c-config)                    ; (find-file "c-config.el")
 (require 'cobol-mode-config)           ; (find-file "cobol-mode-config.el")
 (require 'company-mode-config)         ; (find-file "company-mode-config.el")
-(require 'column-marker-config)        ; (find-file "column-marker-config.el")
 ;; (require 'dashboard-config)            ; (find-file "emacs-dashboard-config.el")
 (require 'flycheck-config)             ; (find-file "flycheck-config.el")
 (require 'go-config)		               ; (find-file "go-config.el")
