@@ -60,3 +60,6 @@ projectile-bookmarks.eld
 # Ignore game scores, except tetris
 games/*
 !games/tetris-scores
+
+# Ignore python stuff
+elpy/
