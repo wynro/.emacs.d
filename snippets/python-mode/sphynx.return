@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sphynx.return
+# key: ret
+# --
+:return: ${1:desc}
+:rtype: ${2:type}

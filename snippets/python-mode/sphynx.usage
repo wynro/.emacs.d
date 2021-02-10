@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: sphynx.usage
+# key: usage
+# --
+Usage ::
+
+>>> $0
