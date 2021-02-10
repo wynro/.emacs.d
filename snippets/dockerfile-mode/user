@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: golang
+# key: golang
+# expand-env: ((yas-also-auto-indent-first-line nil) (yas-indent-line nil))
+# --
+RUN groupadd -r ${1:server} && \
+     useradd --no-log-init -r -g 1 ${2:$1}

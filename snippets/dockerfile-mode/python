@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: python
+# key: python
+# --
+FROM python:3${1:-alpine}
+
+LABEL maintainer="Guillermo Robles <guillerobles1995@gmail.com>"
+LABEL description="${2:description}"
+
+WORKDIR /usr/src/${3:project}
+COPY requirements.txt .
+RUN pip3 install -r requirements.txt
+COPY . .

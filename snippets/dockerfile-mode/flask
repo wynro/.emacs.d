@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: flask
+# key: flask
+# expand-env: ((yas-also-auto-indent-first-line nil) (yas-indent-line nil))
+# --
+FROM python:3
+
+WORKDIR ${1:/app}
+
+COPY requirements.txt .
+RUN pip3 install -r requirements.txt
+COPY . .
+
+ENV FLASK_APP "${2:app.py}"
+
+CMD ["flask", "run"${3:, "--host=0.0.0.0"}]

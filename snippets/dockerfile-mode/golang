@@ -1,0 +1,57 @@
+# -*- mode: snippet -*-
+# name: golang
+# key: golang
+# expand-env: ((yas-also-auto-indent-first-line nil) (yas-indent-line nil))
+# --
+# Adapted from:
+# https://medium.com/@chemidy/create-the-smallest-and-secured-golang-docker-image-based-on-scratch-4752223b7324
+FROM golang:${1:1.11}-alpine as build
+
+LABEL maintainer="${2:Guillermo Robles <guillerobles1995@gmail.com>}"
+LABEL description="${3:description}"
+
+# Remember to change in both stages
+ENV USER=${4:appuser}
+
+# Install git to use 'go mod download', and certificates for SSL
+RUN apk update && \
+        apk add --no-cache \
+        git \
+        ca-certificates
+
+# Create a user and remove all the other ones
+RUN adduser -D -g '' $USER
+RUN sed -i "/$USER/!d" /etc/passwd
+RUN sed -i "/$USER/!d" /etc/shadow
+RUN sed -i "/$USER/!d" /etc/group
+
+# Create app dir and copy source
+RUN mkdir /app
+WORKDIR /app
+COPY . /app/
+
+# Fetch dependencies
+# RUN go get -d -v
+RUN go mod download
+
+# Statically compile the project
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -ldflags='-s -w -extldflags "-static"' -o main .
+
+
+FROM scratch
+
+ENV USER=$4
+
+COPY --from=build /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
+COPY --from=build /etc/passwd /etc/passwd
+COPY --from=build /etc/shadow /etc/shadow
+COPY --from=build /etc/group /etc/group
+${5:# Ony if using the 'time' library
+COPY --from=build /usr/local/go/lib/time/zoneinfo.zip /usr/local/go/lib/time/
+}COPY --from=build /app/main /main
+
+USER $USER
+WORKDIR /
+
+${6:EXPOSE "8080/tcp"
+}ENTRYPOINT ["/main"]
