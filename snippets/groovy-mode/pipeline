@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: pipeline
+# key: pipeline
+# --
+pipeline {
+    $0
+}

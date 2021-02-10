@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: archiveArtifacts
+# key: archive
+# --
+archiveArtifacts artifacts: "${1:file}",
+    allowEmptyArchive: ${2:$$(yas-choose-value "true" "false")},
+    fingerprint: ${3:$$(yas-choose-value "true" "false")}

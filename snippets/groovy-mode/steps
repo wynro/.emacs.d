@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: steps
+# key: steps
+# --
+steps {
+    $0
+}

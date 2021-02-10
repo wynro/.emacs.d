@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: post
+# key: post
+# --
+post {
+${1:    // Glossary: https://www.jenkins.io/doc/book/glossary/#build-status
+
+}    always {
+${2:        // Execute always, regardless of the build result
+}    }
+    success {
+${3:        // Execute when the build finishes without errors
+}    }
+    unstable {
+${4:        // Execute when the build is marked unstable
+}    }
+    failure {
+${5:        // Execute when the build has errors
+}    }
+    changed {
+${6:        // The pipeline made changes
+        // TODO: define whats is the exact meaning of that
+}    }
+}

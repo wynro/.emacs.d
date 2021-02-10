@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Library
+# key: lib
+# --
+@Library('${1:libname}@${2:master}')

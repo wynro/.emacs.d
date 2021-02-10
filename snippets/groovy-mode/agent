@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: agent
+# key: agent
+# --
+agent {
+    ${1:kubernetes \{
+        yamlFile('${2:build/pod.yaml}')
+    \}}
+}

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: sh
+# key: sh
+# --
+${1:${2:var} = }sh(script: "${3:script}"${4:, returnStdout: ${5:$$(yas-choose-value '("true" "false"))}})${6:.trim()}
