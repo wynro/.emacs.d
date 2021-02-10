@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: dt
+# key: dt
+# --
+Time.deltaTime$0
