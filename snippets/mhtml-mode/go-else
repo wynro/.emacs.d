@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: go-else
+# key: else
+# --
+{{- else -}}$0

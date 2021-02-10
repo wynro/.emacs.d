@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: go-range
+# key: range
+# --
+{{- range ${1:.$2} }}
+        $0
+{{- end }}
