@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: header
+# key: header
+# --
+# -*- mode: snippet -*-
+# name: ${1:`(if (string= (file-name-nondirectory buffer-file-name) "") "test" (file-name-nondirectory buffer-file-name))`}
+# key: ${2:$1}
+# --
+$0

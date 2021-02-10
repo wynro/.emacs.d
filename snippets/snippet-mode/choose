@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: choose
+# key: choose
+# --
+\${${1:number}:$$(yas-choose-value '("${2:option1}" "${3:option2}"))}$0
