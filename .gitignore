@@ -30,9 +30,6 @@ tramp
 # Ignore JDEE cache
 semanticdb/
 
-# Ignore mc-lists file
-.mc-lists.el
-
 # Ignore `package` directory
 elpa/
 
