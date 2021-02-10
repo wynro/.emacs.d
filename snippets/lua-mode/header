@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: header
+# key: header
+# --
+-- -*- lua -*-
+--
+-- Description: ${1:description}
+--
+-- Author: ${2:Guillermo Robles}
+
+$0

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: love.rectangle
+# key: love.rectangle
+# --
+
+love.graphics.rectangle(${1:mode}, ${2:x}, ${3:y}, ${4:width}, ${5:height})$0

@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: love.main
+# key: love.main
+# --
+--! @brief Loads all the resources of the game. Executed once on game start
+function love.load()
+   $0
+end
+
+--! @brief Main game loop
+--! @param dt Time between this loop and the previous one
+function love.update(dt)
+
+end
+
+--! @brief Does the drawing on the screen
+function love.draw()
+
+end

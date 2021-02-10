@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: love.circle
+# key: love.circle
+# --
+
+love.graphics.circle(${1:mode}, ${2:x}, ${3:y}, ${4:radius})$0
