@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: get_resource
+# key: gres
+# expand-env: ((yas-indent-line 'fixed))
+# --
+{ get_resource: ${1:resource_name} }$0

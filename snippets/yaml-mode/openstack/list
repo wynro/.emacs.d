@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: list_join
+# key: join
+# expand-env: ((yas-indent-line 'fixed))
+# --
+{ list_join: ['${1:-}', [${2:{ get_param: stack_name }}, ${3:{ get_param: vn }}]]}

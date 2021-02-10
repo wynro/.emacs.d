@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: sriov
+# key: sriov
+# expand-env: ((yas-indent-line 'fixed))
+# --
+  ${1:vm_name}_${2:net_name}_port:
+    type: OS::Neutron::Port
+    properties:
+      name: { list_join: ['-', [{ get_param: stack_name }, { list_join: ['_', [{ get_param: ${3:$1_name} }, "${4:$2}_port"]]}]]}
+      network: { get_resource: ${5:$2_net} }
+      port_security_enabled: false
+      binding:vnic_type: direct

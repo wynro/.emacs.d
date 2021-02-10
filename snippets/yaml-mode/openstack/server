@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: server
+# key: server
+# expand-env: ((yas-indent-line 'fixed))
+# --
+  ${1:name}:
+    type: OS::Nova::Server
+    properties:
+      name: { list_join: ['-', [{ get_param: stack_name }, { get_param: ${2:$1_name} }]]}
+      flavor: { get_resource: ${3:$1_flavor} }
+      image: { get_param: ${4:$1_image} }
+      key_name: { get_param: ${5:key_name} }
+      networks:
+        - port: { get_resource: ${6:$1_oam_port} }
+      availability_zone: { get_param: ${7:azone_name} }
+${8:      user_data_format: RAW
+      user_data: { get_file: ${9:Resources/UserConfigurationFiles/$1Config.sh} }
+}${10:      metadata:
+        user: { get_param: ${11:$1_user} } }

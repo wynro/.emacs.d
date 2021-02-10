@@ -1,0 +1,28 @@
+# -*- mode: snippet -*-
+# name: pod
+# key: pod
+# expand-env: ((yas-indent-line 'fixed))
+# --
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ${1:name}
+  labels:
+    app.kubernetes.io/name: ${2:$1}
+spec:
+  containers:
+    - name: ${3:name}
+      image: ${4:image}${5:
+      env:
+        - name: VARIABLE
+          value: "VALUE"}
+      ports:
+        - containerPort: ${6:port}
+          protocol: ${7:$$(yas-choose-value \"TCP\" \"UDP\" \"ICMP\")}
+      livenessProbe:
+        initialDelaySeconds: ${8:3}
+        periodSeconds: ${9:1}
+        httpGet:
+          path: /${10:healthz}
+          port: ${11:$6}

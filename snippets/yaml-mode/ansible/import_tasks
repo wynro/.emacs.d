@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: import_tasks
+# key: it
+# expand-env: ((yas-indent-line 'fixed))
+# --
+- import_tasks: ${1:install}.yml$0

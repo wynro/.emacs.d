@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: item
+# key: i
+# expand-env: ((yas-indent-line 'fixed))
+# --
+"{{ ${1:item} }}"$0

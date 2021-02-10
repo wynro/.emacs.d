@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: service
+# key: service
+# expand-env: ((yas-indent-line 'fixed))
+# --
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: ${1:name}
+  labels:
+    app.kubernetes.io/name: ${2:$1}
+spec:
+  type: ${3:$$(yas-choose-value \"NodePort\" \"LoadBalancer\" \"ExternalName\" \"ClusterIP\")}
+  selector:
+    app.kubernetes.io/name: ${4:$2}
+  ports:
+  - protocol: ${5:$$(yas-choose-value \"TCP\" \"UDP\" \"ICM\")}
+    port: ${6:port}
+    targetPort: ${7:$6}

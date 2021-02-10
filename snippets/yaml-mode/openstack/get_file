@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: get_file
+# key: gfile
+# expand-env: ((yas-indent-line 'fixed))
+# --
+{ get_file: ${2:Resources/UserConfigurationFiles/${1:script.sh}} }

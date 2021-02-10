@@ -1,0 +1,36 @@
+# -*- mode: snippet -*-
+# name: security_group
+# key: secgr
+# expand-env: ((yas-indent-line 'fixed))
+# --
+${1:name}_security_group:
+  type: OS::Neutron::SecurityGroup
+  properties:
+    rules:
+${2:      - remote_ip_prefix: "0.0.0.0/0"
+        protocol: icmp
+        direction: ingress
+}${3:      - remote_ip_prefix: "0.0.0.0/0"
+        protocol: tcp
+        port_range_min: 1
+        port_range_max: 65535
+        direction: ingress
+}${4:      - remote_ip_prefix: "0.0.0.0/0"
+        protocol: udp
+        port_range_min: 1
+        port_range_max: 65535
+        direction: ingress
+}${5:      - remote_ip_prefix: "0.0.0.0/0"
+        protocol: icmp
+        direction: egress
+}${6:      - remote_ip_prefix: "0.0.0.0/0"
+        protocol: tcp
+        port_range_min: 1
+        port_range_max: 65535
+        direction: egress
+}${7:      - remote_ip_prefix: "0.0.0.0/0"
+        protocol: udp
+        port_range_min: 1
+        port_range_max: 65535
+        direction: egress
+}

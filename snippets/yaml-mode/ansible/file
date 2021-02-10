@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: file
+# key: file
+# expand-env: ((yas-indent-line 'fixed))
+# --
+- name: ${1:Name}
+  file:
+    path: ${2:file}
+    state: ${3:$$(yas-choose-value \"file\" \"absent\" \"directory\" \"hard\" \"link\" \"touch\")}
+    owner: ${4:root}
+    group: ${5:root}
+    mode: ${6:0644}

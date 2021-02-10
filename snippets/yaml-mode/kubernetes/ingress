@@ -1,0 +1,37 @@
+# -*- mode: snippet -*-
+# name: ingress
+# key: ingress
+# expand-env: ((yas-indent-line 'fixed))
+# --
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ${1:name}
+${2:  namespace: ${3:namespace}
+}  labels:
+    app.kubernetes.io/name: "${4:$1}"
+  annotations:
+    kubernetes.io/ingress.class: '${5:nginx}'
+    cert-manager.io/cluster-issuer: '${6:letsencrypt-prod}'
+    nginx.ingress.kubernetes.io/ssl-redirect: 'true'
+${7:    nginx.ingress.kubernetes.io/force-ssl-redirect: 'true'
+}${8:    nginx.ingress.kubernetes.io/proxy-read-timeout: '3600' # Websockets
+    nginx.ingress.kubernetes.io/proxy-send-timeout: '3600' # Websockets
+}${9:    nginx.ingress.kubernetes.io/proxy-body-size: '0'   # Upload big files
+}spec:
+  tls:
+    - hosts:
+        - ${12:${11:$1}.${10:mad-01.wynro.me}}
+      secretName: ${13:$12-tls}
+  rules:
+    - host: ${14:$12}
+      http:
+        paths:
+          - path: /
+            pathType: ${15:Prefix}
+            backend:
+              service:
+                name: ${17:${16:$1}-svc}
+                port:
+                  number: ${18:80}

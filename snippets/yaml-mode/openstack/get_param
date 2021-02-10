@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: get_param
+# key: gpar
+# --
+{ get_param: ${1:param_name} }$0

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: playbook
+# key: playbook
+# expand-env: ((yas-indent-line 'fixed))
+# --
+- hosts: ${1:all}
+  become: ${2:$$(yas-choose-value "true" "false")}
+  gather_facts: ${3:$$(yas-choose-value "true" "false")}
+
+${4:  vars_files:
+    - vars.yaml
+
+}  tasks:
+$0

@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: flavor
+# key: flavor
+# expand-env: ((yas-indent-line 'fixed))
+# --
+  ${1:name}_flavor:
+    type: OS::Nova::Flavor
+    properties:
+      name: ${2:$1}
+      ram: ${3:2048}
+      disk: ${4:16} #GB
+${4:$(if (not (eq (mod* (string-to-number yas-text) 8) 0)) "      #Warning: Disk size should be a multiple of 8GB\n" "")
+}      swap: ${5:0}
+      vcpus: ${6:2}
+      extra_specs: {"hw:cpu_policy":"dedicated", "hw:mem_page_size":"large"${7:, "hw:numa_nodes": "2"}}
