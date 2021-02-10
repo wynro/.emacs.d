@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: underscore
+# key: u
+# --
+_$1_$0
