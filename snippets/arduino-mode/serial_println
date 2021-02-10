@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: serial_println
+# key: prl
+# --
+Serial.println($1);$0

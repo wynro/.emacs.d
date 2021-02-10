@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: digital_read
+# key: dread
+# --
+digitalRead(${1:pin})$0

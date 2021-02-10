@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: builtin_led
+# key: biled
+# --
+BUILTIN_LED

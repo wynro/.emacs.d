@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: delay
+# key: delay
+# --
+delay(${1:milliseconds});$0

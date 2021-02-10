@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: pin_mode
+# key: pmode
+# --
+pinMode(${1:pin}, ${2:$$(yas-choose-value "INPUT" "OUTPUT")});$0

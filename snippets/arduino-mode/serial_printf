@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: serial_printf
+# key: prf
+# --
+Serial.printf("${1:%s\n}", ${2:args});$0
