@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: fmt.Errorf
+# key: ferr
+# --
+fmt.Errorf("$1: %v", ${2:err})$0

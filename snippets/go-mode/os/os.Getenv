@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: os.Getenv
+# key: getenv
+# --
+os.Getenv(${1:"ENV"})$0

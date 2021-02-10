@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: make
+# key: make
+# --
+make(${1:type}${2:, ${3:len}${4:, ${5:cap}}})$0

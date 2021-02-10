@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: flag.String
+# key: flagstring
+# --
+${1:flagName} ${2::}= flag.String(${3:name}, ${4:default}, ${5:usage})$0

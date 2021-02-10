@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: flag.Parse
+# key: flagparse
+# --
+flag.Parse()$0

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: flag.Float64
+# key: flagfloat64
+# --
+${1:flagName} ${2::}= flag.Float64(${3:name}, ${4:default}, ${5:usage})$0

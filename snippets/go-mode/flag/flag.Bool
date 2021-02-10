@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: flag.Bool
+# key: flagbool
+# --
+${1:flagName} ${2::}= flag.Bool(${3:name}, ${4:default}, ${5:usage})$0

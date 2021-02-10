@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: fmt.Sprintf
+# key: spr
+# group: fmt
+# --
+fmt.Sprintf("${1:%s}", ${2:args})$0

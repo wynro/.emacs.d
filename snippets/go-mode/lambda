@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: lambda
+# key: lam
+# --
+func(${4:args}) $5 {
+        $0
+}

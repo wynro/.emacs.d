@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: fmt.Fprintf
+# key: fpr
+# group: fmt
+# --
+fmt.Fprintf(${1:w}, "${2:%s}", ${3:args})$0

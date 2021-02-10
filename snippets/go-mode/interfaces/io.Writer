@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: io.Writer
+# key: writer
+# --
+func (${1:$(convert-go-type-to-acronym yas-text)} *${1:type}) Write(p []byte) (n int, err error) {
+        $0
+}

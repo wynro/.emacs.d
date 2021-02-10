@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: select
+# key: select
+# --
+select {
+case ${1:case1}:
+        $0
+
+default:
+
+}

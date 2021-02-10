@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: thelper
+# key: thelper
+# --
+
+func ${1:}(t *testing.T, ${2:got, want ${3:type}}) {
+        t.Helper()
+
+        ${4:if !reflect.DeepEqual(got, want) {
+                $0
+        }}
+}

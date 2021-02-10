@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: os.Open
+# key: open
+# --
+${1:f}, err ${2::}= os.Open(${3:path})

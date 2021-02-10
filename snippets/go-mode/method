@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: method-mine
+# key: method
+# --
+// $3 ${6:...}
+func (${2:$(convert-go-type-to-acronym yas-text)} ${1:*}${2:type}) ${3:Func}($4) $5 {
+        $0
+}

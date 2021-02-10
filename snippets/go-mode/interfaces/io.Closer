@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: io.Closer
+# key: closer
+# --
+func (${1:$(convert-go-type-to-acronym yas-text)} *${1:type}) Close() error {
+        $0
+}

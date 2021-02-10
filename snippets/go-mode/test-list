@@ -1,0 +1,29 @@
+# -*- mode: snippet -*-
+# name: test-list
+# key: test
+# --
+func Test$1(t *testing.T) {
+        tests := []struct {
+                name   string
+                input  ${2:type}
+                output ${3:type}
+        }{{
+                name:   "${4:name}",
+                input:  ${5:value},
+                output: ${6:value},
+        }, {
+                name:   "${7:name}",
+                input:  ${8:value},
+                output: ${9:value},
+        }}
+
+        for _, test := range tests {
+                t.Run(test.name, func(*testing.T) {
+                        output := ${10:$1(test.input)}
+                        if test.output != output {
+                                t.Errorf("%s: expected \`%+v\`, got \`%+v\`",
+                                        test.name, test.output, output)
+                        }
+                })
+        }
+}

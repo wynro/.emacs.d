@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: flag.Int
+# key: flagint
+# --
+${1:flagName} ${2::}= flag.Int(${3:name}, ${4:default}, ${5:usage})$0

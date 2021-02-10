@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: fmt.Stringer
+# key: stringer
+# --
+func (${1:$(convert-go-type-to-acronym yas-text)} ${1:type}) String() string {
+        ${2:return ${3:fmt.Sprintf("%+v", ${1:$(convert-go-type-to-acronym yas-text)})}}$0
+}

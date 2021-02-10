@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: errors.Wrap
+# key: ewrap
+# Not from stdlib
+# --
+errors.Wrap(${1:err}, $2)$0

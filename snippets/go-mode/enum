@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: enum
+# key: enum
+# --
+type ${1:typeName} ${2:int}
+
+const (
+        ${3:A} $1 = iota
+        ${4:B}
+)

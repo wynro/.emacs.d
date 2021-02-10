@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: http.HandleFunc
+# key: addhf
+# --
+${1:http}.HandleFunc("/${2:}", ${3:func(w http.ResponseWriter, r *http.Request) {
+        $0
+}})

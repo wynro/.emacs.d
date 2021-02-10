@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: io.Reader
+# key: reader
+# --
+func (${1:$(convert-go-type-to-acronym yas-text)} *${1:type}) Read(p []byte) (n int, err error) {
+        $0
+}

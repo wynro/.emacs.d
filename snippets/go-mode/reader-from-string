@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: reader-from-string
+# key: readerfromstring
+# --
+${1:sr} ${2::}= strings.NewReader(${3:"${4:}"})$0

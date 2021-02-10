@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: flag.Duration
+# key: flagduration
+# --
+${1:flagName} ${2::}= flag.Duration(${3:name}, ${4:default}, ${5:usage})$0

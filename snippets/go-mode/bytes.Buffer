@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: bytes.Buffer
+# key: buf
+# --
+${1:&}bytes.Buffer${2:{$0}}

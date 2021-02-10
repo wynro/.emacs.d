@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: t.Errorf
+# key: terr
+# --
+t.Errorf("${1:got \`%+v\`, want \`%+v\`}", ${2:got${3:, want}})$0

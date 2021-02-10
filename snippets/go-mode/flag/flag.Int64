@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: flag.Int64
+# key: flagint64
+# --
+${1:flagName} ${2::}= flag.Int64(${3:name}, ${4:default}, ${5:usage})$0
