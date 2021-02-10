@@ -1,4 +1,4 @@
 [submodule "lisp/latex-preview-pane"]
-        path = lisp/latex-preview-pane
-        url = https://github.com/wynro/latex-preview-pane.git
+	path = lisp/latex-preview-pane
+	url = https://github.com/wynro/latex-preview-pane.git
         branch = master
