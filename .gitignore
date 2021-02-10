@@ -65,3 +65,5 @@ games/*
 elpy/
 
 projectile.cache
+
+network-security.data
