@@ -69,3 +69,7 @@ projectile.cache
 network-security.data
 
 snippets/makefile-mode/descriptor
+snippets/org-mode/club/
+
+data/*
+!data/mc-list.el
