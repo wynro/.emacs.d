@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ansible_ssh_host
+# key: ash
+# --
+ansible_ssh_host=$0

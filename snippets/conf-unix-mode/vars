@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: vars
+# key: vars
+# --
+[${1:group_name}:vars]
+ansible_ssh_user=${2:root}
+ansible_ssh_private_key_file=${3:~/.ssh/${4:ansible}}
+ansible_python_interpreter=${5:/usr/bin/python3}
