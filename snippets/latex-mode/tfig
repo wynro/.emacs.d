@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: table figure
+# key: tfig
+# --
+\begin{figure}[ht]
+  \centering
+  \begin{tabular}[c]{ | l | r | c || p{3cm} |  } \hline
+     \multirow{2}{*}{Campo1} & Campo2 & \multicolumn{2}{c}{Campo3y4} \\\\ \hline
+                             & Campo5 & Campo6                       \\\\ \hline
+  \end{tabular}
+  \caption{\label{table:${1:label}} $0}
+\end{figure}

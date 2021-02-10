@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: ref
+# key: ref
+# expand-env: ((require-final-newline 'false) (yas-indent-line 0))
+# --
+\ref{${1:link}}$0

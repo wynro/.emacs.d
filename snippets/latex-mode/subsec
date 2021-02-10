@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: subsec
+# key: sub
+# --
+\subsection{${1:name}}
+\label{${2:subsec:${1:$(replace-regexp-in-string " " "-"
+                       (replace-regexp-in-string "á" "a"
+                       (replace-regexp-in-string "é" "e"
+                       (replace-regexp-in-string "í" "i"
+                       (replace-regexp-in-string "ó" "o"
+                       (replace-regexp-in-string "ú" "u"
+                       (replace-regexp-in-string "ñ" "n"
+                       (replace-regexp-in-string "/" "-" (downcase yas-text)))))))))}}}
+
+$0

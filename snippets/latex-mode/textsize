@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: textsize
+# key: size
+# --
+\\${$$(yas-choose-value '("Huge" "huge" "LARGE" "Large" "large" "normalsize" "small" "footnotesize" "scriptsize" "tiny"))}$0
