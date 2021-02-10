@@ -9,4 +9,32 @@
 Author: ${2:Guillermo Robles}
 """
 
-$0
+
+import argparse
+import sys
+
+
+def parse_args():
+    """Define and parse the arguments of the script
+
+    """
+    parser = argparse.ArgumentParser(description='${3:$1}')
+
+    parser.add_argument('-v', '--verbose', action='store_true')
+    # parser.add_argument('opt-arg', nargs='?', default="VALUE") # Optional argument
+    # parser.add_argument('--other-arg', type=str,
+    #                     required=False, default="",
+    #                     help=("Name stuff. (default: %(default)s)"))
+
+    return parser.parse_args()
+
+
+def main():  # pylint: disable=missing-docstring
+    args = parse_args()
+
+    $0
+    ${4:return 0}
+
+
+if __name__ == '__main__':
+    sys.exit(main())
