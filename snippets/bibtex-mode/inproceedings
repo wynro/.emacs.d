@@ -1,8 +1,8 @@
 # -*- mode: snippet -*-
-# name: conference
-# key: conference
+# name: inproceedings
+# key: inproceedings
 # --
-@conference{ ${title},
+@inproceedings{ ${title},
   author       = {${author}},
   title        = {${title}},
   booktitle    = {${booktitle}},
@@ -17,5 +17,5 @@
   publisher    = {${publisher}}}${,
   note         = {${note}}}
 }
-
+ 
 $0

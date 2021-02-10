@@ -1,21 +1,21 @@
 # -*- mode: snippet -*-
 # name: inbook
 # key: inbook
-# expand-env: ((require-final-newline 'false) (yas-indent-line 0))
 # --
-@inbook{ ${1:title},
-  author       = {${2:author}},
-  title        = {${3:title}},
-  chapter      = {${4:chapter}},
-  pages        = {${5:pages}},
-  publisher    = {${6:publisher}},
-  year         = {${7:year}},
-  volume       = {${8:volume}},
-  series       = {${9:series}},
-  address      = {${10:address}},
-  edition      = {${11:edition}},
-  month        = {${12:month}},
-  note         = {${13:note}}
+@inbook{ ${title},
+  author    = {${author}},
+  title     = {${title}},
+  chapter   = {${chapter}}${,
+  pages     = {${pages}}},
+  publisher = {${publisher}},
+  year      = {${year}},
+  volume    = {${volume}}${,
+  series    = {${series}}}${,
+  type      = {${type}}}${,
+  address   = {${addre}ss}}${,
+  edition   = {${edition}}}${,
+  month     = {${month}}}${,
+  note      = {${note}}}
 }
 
 $0

@@ -1,23 +1,23 @@
 # -*- mode: snippet -*-
 # name: incollection
 # key: incollection
-# expand-env: ((require-final-newline 'false) (yas-indent-line 0))
 # --
-@incollection{ ${1:title},
-  author       = {${2:author}},
-  title        = {${3:title}},
-  booktitle    = {${4:booktitle}},
-  publisher    = {${5:publisher}},
-  year         = {${6:year}},
-  editor       = {${7:editor}},
-  volume       = {${8:volume}},
-  series       = {${9:series}},
-  chapter      = {${10:chapter}},
-  pages        = {${11:pages}},
-  address      = {${12:address}},
-  edition      = {${13:edition}},
-  month        = {${14:month}},
-  note         = {${15:note}}
+@incollection{ ${title},
+  author    = {${author}},
+  title     = {${title}},
+  booktitle = {${booktitle}},
+  publisher = {${publisher}},
+  year      = {${year}}${,
+  editor    = {${editor}}}${,
+  volume    = {${volume}}}${,
+  series    = {${series}}}${,
+  type      = {${type}}}${,
+  chapter   = {${chapter}}}${,
+  pages     = {${pages}}}${,
+  address   = {${address}}}${,
+  edition   = {${edition}}}${,
+  month     = {${month}}}${,
+  note      = {${note}}}
 }
 
 $0

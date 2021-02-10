@@ -1,19 +1,18 @@
 # -*- mode: snippet -*-
 # name: proceedings
 # key: proceedings
-# expand-env: ((require-final-newline 'false) (yas-indent-line 0))
 # --
-@proceedings{ ${1:title},
-  title        = {${2:title}},
-  year         = {${3:year}},
-  editor       = {${4:editor}},
-  volume       = {${5:volume}},
-  series       = {${6:series}},
-  address      = {${7:address}},
-  month        = {${8:month}},
-  organization = {${9:organization}},
-  publisher    = {${10:publisher}},
-  note         = {${11:note}}
+@proceedings{ ${title},
+  title        = {${title}},
+  year         = {${year}}${,
+  editor       = {${editor}}}${,
+  volume       = {${volume}}}${,
+  series       = {${series}}}${,
+  address      = {${address}}}${,
+  month        = {${month}}}${,
+  organization = {${organization}}}${,
+  publisher    = {${publisher}}}${,
+  note         = {${note}}}
 }
 
 $0

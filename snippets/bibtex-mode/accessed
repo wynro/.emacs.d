@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: accessed
+# key: accessed
+# --
+Accessed: `(format-time-string "%Y/%m/%d")`${1:, }$0
