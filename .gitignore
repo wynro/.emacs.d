@@ -30,12 +30,6 @@ tramp
 # Ignore JDEE cache
 semanticdb/
 
-# Ignore package readmes
-elpa/*-readme.txt
-
-# Ignore repositories lists
-elpa/archives/
-
 # Ignore mc-lists file
 .mc-lists.el
 
