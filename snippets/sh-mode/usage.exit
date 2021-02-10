@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: usage.exit
+# key: usageexit
+# --
+# Show command instructions and exit with the given code
+#
+# \$1: exit code (1 by default, -1 to not exit)
+usage () {
+    $0
+    case "${1:-}" in
+        "")
+            exit 1
+            ;;
+        "-1")
+            ;;
+        *)
+            exit "${1:-}"
+            ;;
+    esac
+}
