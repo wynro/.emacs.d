@@ -1,0 +1,49 @@
+# -*- mode: snippet -*-
+# name: arguments
+# key: arguments
+# from: Time Management for System Administrators
+# --
+
+VERBOSE=
+DEBUG=
+# Show usage
+usage () {
+    echo "Usage: \$0 [-v] [-a] [-b file.txt] file1 file2"
+}
+
+args=$(getopt vab: -- "$@")
+
+if [ $? != 0 ]
+then
+    usage
+    exit -1
+fi
+
+set -- $args
+
+for i
+do
+    case "$i"
+    in
+        -a)
+            FLAG_A=1
+            shift
+            ;;
+        -b)
+            ITEM_B="\$2"; shift
+            shift
+            ;;
+        -v)
+            VERBOSE=true
+            shift
+            ;;
+        -d)
+            DEBUG=true
+            shift
+            ;;
+        --)
+            shift
+            break
+            ;;
+    esac
+done
