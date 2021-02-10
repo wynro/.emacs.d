@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: lines
+# key: lines
+# --
+${1:lines} = []
+with open(${"${filename}"}, "r") as lines_file:
+    $1 = [line.rstrip("\n") for line in lines_file]
+$0

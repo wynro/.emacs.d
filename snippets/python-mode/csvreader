@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: CSV reader
+# key: csv
+# --
+import csv
+
+with open(${1:'${2:file.csv}'}) as csv_data_file:
+    csv_reader = csv.reader(csv_data_file, delimiter='${3:,}')
+    for row in csv_Reader:
+        ${4:print(row)}$0

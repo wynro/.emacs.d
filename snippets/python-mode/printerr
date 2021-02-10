@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: printerr
+# key: pe
+# --
+print($1, file=sys.stderr)

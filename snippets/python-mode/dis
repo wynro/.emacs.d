@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Disassembler
+# key: dis
+# --
+import dis; dis.dis(${1:})$0

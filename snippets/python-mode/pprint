@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Pretty Print
+# key: pp
+# --
+import pprint; pprint.pprint(${1:})$0
