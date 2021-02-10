@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: attribute.interrupt
+# key: interrupt
+# --
+__attribute__((interrupt))$0
