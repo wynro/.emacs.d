@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: subchapter
+# key: subcha
+# --
+<h3 id="${1:subchapter${2:n}}">${3:name}</h3>
