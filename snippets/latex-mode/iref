@@ -3,4 +3,4 @@
 # key: iref
 # expand-env: ((require-final-newline 'false) (yas-indent-line 0))
 # --
-\iref{${1:link}}{${2:text}}$0
+\iref{${1:link}}{${2:Figure }}$0
