@@ -2,6 +2,6 @@
 # name: src
 # key: src
 # --
-#+BEGIN_SRC ${1:language}${2: ${3:options}}
+#+BEGIN_SRC ${1:language}${2: :results value verbatim}${3: ${4:options}}
 $0
 #+END_SRC
