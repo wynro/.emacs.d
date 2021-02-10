@@ -3,9 +3,12 @@
 # key: main
 # expand-env: ((yas-indent-line 'fixed))
 # --
+
+import sys
+
 def main():
     ${1:pass}$0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
