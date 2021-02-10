@@ -63,3 +63,5 @@ games/*
 
 # Ignore python stuff
 elpy/
+
+projectile.cache
