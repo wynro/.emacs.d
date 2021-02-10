@@ -56,3 +56,7 @@ type-break
 
 # Ignore projectile bookmarks
 projectile-bookmarks.eld
+
+# Ignore game scores, except tetris
+games/*
+!games/tetris-scores
