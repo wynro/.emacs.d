@@ -3,7 +3,24 @@
 # key: header
 # --
 # -*- mode: org -*-
-#${1:
-#+STARTUP: showeverything}
+#
+#+TITLE:      ${1:Title}${2:
+#+AUTHOR:     Guillermo Robles}${3:
+#+EMAIL:      guillerobles1995@gmail.com}
+#+LANGUAGE:   ${4:en}
+#+INFOJS_OPT: view:showall toc:t ltoc:t mouse:underline path:http://orgmode.org/org-info.js
+#+OPTIONS:    H:2 num:t toc:nil \n:nil @:t ::t |:t ^:{} _:{} *:t TeX:t LaTeX:t
+#+STARTUP:    showall${5:
+#             Add black background to code blocks
+#+HTML_HEAD:  <style>pre.src { background-color: #101010; color: #e5e5e5; \} </style>}${6:
+#             Add margins
+#+HTML_HEAD:  <style>body { padding: 2rem; margin: auto; \} </style>}${7:
+#             Night mode
+${8:# }#+HTML_HEAD:  <style>body { background-color: #101010; color: #e5e5e5 \} </style>}${9:
+
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport}${10:
+
+#+PROPERTIES: SRC ${11:src}}
 
 $0
