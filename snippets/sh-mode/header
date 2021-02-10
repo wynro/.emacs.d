@@ -1,16 +1,27 @@
 # -*- mode: snippet -*-
 # name: header
 # key: header
+# Flags from: https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+# Error info on exit from: https://unix.stackexchange.com/questions/39623/trap-err-and-echoing-the-error-line
 # --
 #!/bin/${1:ba}sh
 # Author: ${2:Guillermo Robles}
 #
 # ${3:description}
 
-${4:set -e                          # Exit in case of errors (prevent error snowballing)
-}${5:set -u                          # Errors on unset variables usage
-}${6:set -o pipefail                 # The return value of pipeline is the return value of the rightmost command to exit with a non-zero, or zero if all commands exit succesfully
-}${7:
-IFS=$'\n\t'                     # Modifies the IFS
+${4:set -o errexit                  # Exit in case of errors
+${5:err_report() {
+    echo "Error on line \$${1:$(if (string= yas-text "ba") "(caller)" "{0\}")}"
+    awk 'NR>L-4 && NR<L+4 { printf "%-5d%3s%s\n",NR,(NR==L?">>>":""),\$0 \}' L="\$1" "\$0"
+    trap 'err_report $LINENO' ERR   # report line number and context on exit
+\}
+}}
+${7:set -o nounset                  # Errors on unset variables usage
+}${8:# The return value of pipeline is the return value of the rightmost
+# command to exit with a non-zero, or zero if all commands exit
+# succesfully
+set -o pipefail
+}${9:
+IFS=\$(printf '\n\t')
 }
 $0
