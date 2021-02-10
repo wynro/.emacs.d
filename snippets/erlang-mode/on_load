@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: on_load
+# key: ol
+# --
+-on_load(${1:start/0}).$0
