@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: tmpdir
+# key: tmpdir
+# --
+tmp_dir="$(mktemp -d)"
+function cleanup {
+    rm -rf "$\{tmp_dir\}"
+}
+trap cleanup EXIT
+$0

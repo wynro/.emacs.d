@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: tmp
+# key: tmp
+# --
+tmp="$(mktemp)"
+function cleanup {
+    rm -rf "$\{tmp\}"
+}
+trap cleanup EXIT
+$0
