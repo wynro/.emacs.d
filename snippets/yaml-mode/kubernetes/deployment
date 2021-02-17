@@ -25,7 +25,12 @@ spec:
           image: ${5:image}${4:
           env:
             - name: VARIABLE
-              value: "VALUE"}
+              value: "VALUE"
+            - name: VARIABLE_FROM_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: mysecret
+                  key: SECRET_PWD}
           ports:
             - containerPort: ${6:port}
               protocol: ${7:$$(yas-choose-value \"TCP\" \"UDP\" \"ICMP\")}
